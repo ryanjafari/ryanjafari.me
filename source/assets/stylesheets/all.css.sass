@@ -1,6 +1,15 @@
-@import bootswatch/readable/bootstrap
+// @import bootswatch/readable/bootstrap
+@import bootswatch/lumen/bootstrap
 @import font-awesome/css/font-awesome
 @import pygments/css/pastie
 
 .article
   margin-bottom: 60px
+  &:first-child h2
+    margin-top: 0
+
+.truncate
+  overflow: hidden
+  text-overflow: ellipsis
+  white-space: nowrap
+

@@ -1,5 +1,3 @@
-# Cetrasoft Website 3.0
-
 ## Install Instructions
 
 1. Clone the repository

@@ -9,8 +9,8 @@ html (lang='en')
     / Something for responsive
     meta (name='viewport' content='width=device-width, initial-scale=1')
 
-    meta (name='author'      content='Cetrasoft LLC')
-    meta (name='description' content=data.page.descr)
+    meta (name='author'      content='Ryan Jafari')
+    meta (name='description' content=page_data.descr)
 
     / Touch icons
     link (rel='apple-touch-icon-precomposed' sizes='152x152'  href='apple-touch-icon-152x152-precomposed.png')
@@ -33,7 +33,7 @@ html (lang='en')
     link (rel='icon' type='image/ico'             href='favicon.ico')
 
     / Use title if it's in the page YAML frontmatter
-    title = "Cetrasoft | #{data.page.title}" || 'Cetrasoft'
+    title = "ryan jafari | #{page_data.title}" || 'ryan jafari'
 
     = stylesheet_link_tag 'all'
     = javascript_include_tag  'all'

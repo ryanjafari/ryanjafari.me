@@ -1,6 +1,5 @@
 ---
 title: "You're not a designer, you're a developer!"
-author: ryan
 date: 2012-03-03 21:04 -05:00
 tags: design
 ---

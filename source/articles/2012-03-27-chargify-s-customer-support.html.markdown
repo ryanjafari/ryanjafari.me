@@ -1,6 +1,5 @@
 ---
 title: "Chargify's Customer Support"
-author: ryan
 date: 2012-03-27 01:35 -05:00
 tags: development
 ---

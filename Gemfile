@@ -29,3 +29,5 @@ gem 'middleman-bower', '~> 1.0.2'
 gem 'therubyracer', '~> 0.12.1'
 
 gem 'oj', '~> 2.5.4'
+
+gem 'nokogiri', '~> 1.6.1'

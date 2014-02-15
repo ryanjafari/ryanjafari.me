@@ -200,6 +200,7 @@ DEPENDENCIES
   middleman-s3_redirect (~> 3.0.3)
   middleman-s3_sync (~> 3.0.24)
   middleman-syntax (~> 2.0.0)
+  nokogiri (~> 1.6.1)
   oj (~> 2.5.4)
   rack-google-analytics (~> 1.0.0)
   redcarpet (~> 3.0.0)

@@ -1,6 +1,5 @@
 ---
 title: "git flow: rebasing a feature branch"
-author: ryan
 date: 2012-03-06 18:57 -05:00
 tags: development
 ---

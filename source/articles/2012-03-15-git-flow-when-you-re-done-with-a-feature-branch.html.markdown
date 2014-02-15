@@ -1,6 +1,5 @@
 ---
 title: "git flow: when you're done with a feature branch"
-author: ryan
 date: 2012-03-15 20:05 -05:00
 tags: development
 ---

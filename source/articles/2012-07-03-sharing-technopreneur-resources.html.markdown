@@ -1,6 +1,5 @@
 ---
 title: 'Sharing "Technopreneur" Resources'
-author: ryan
 date: 2012-07-03 22:59 -05:00
 tags: startups
 ---

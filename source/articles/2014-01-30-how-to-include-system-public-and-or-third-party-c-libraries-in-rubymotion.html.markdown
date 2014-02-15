@@ -1,9 +1,7 @@
 ---
 title: How to include system, public, and/or third party C libraries in RubyMotion
-author: ryan
 date: 2014-01-30 13:23 -05:00
-tags: rubymotion-osx, something, something-else
-list: development
+tags: rubymotion-osx
 ---
 
 _This is part one in a series of posts about my trials and tribulations in OS X development with RubyMotion._
@@ -38,7 +36,7 @@ I went ahead and did some research and found out the RubyMotion's `Motion::Proje
 
 There's a really smart guy named [Dave Lee][3] who put together a simple and useful gem called [motion.h][4] for facilitating the use of bridgesupport in RubyMotion, integrating it into the build process that happens when you run your project's `Rakefile` by typing `rake`. It takes header files from the library you want to use as input. Here, I'll show you:
 
-```
+```ruby
 # Gemfile
 gem 'motion.h'
 
@@ -54,7 +52,7 @@ Note that `File.basename(f)` is something like `pulseaudio.h` and `File.dirname(
 
 **GOTCHYA:** Another note is that motion.h automatically prepends the Mac OS X developer system library folder to the `prefix` option you see there. That may or may not be OK with you. I found it annoying since my library was at `/usr/local/include`, but I'm assuming my case was an outlier. In order to get around it, and for the above to work, I did a quick and dirty hack:
 
-```
+```ruby
 # Rakefile
 class MotionHeader
   def include_path

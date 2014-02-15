@@ -1,5 +1,5 @@
 <div class='media'>
-  <%= gravatar_image_tag 'ryan@ryanandcarlos.com', class: 'media-object pull-left img-rounded' %>
+  <%= gravatar_image_tag 'ryan@ryanandcarlos.com', class: 'media-object pull-right img-rounded' %>
   <div class='media-body'>
     <h3 class='h4 media-heading'>Ryan Jafari</h3>
     <p>Foodie, gym rat, gamer, web developer (in that order). Aspiring world traveler.</p>
@@ -18,9 +18,9 @@
 <h3 class='h4'>Recent Articles</h3>
 <ul class='list-unstyled'>
   <% blog.articles[0...10].each do |article| %>
-    <li>
+    <li class='truncate'>
       <span><%= article.date.strftime('%b %e') %></span>
-      <%= link_to truncate_words(article.title, length: 5), article.url %>
+      <%= link_to article.title, article.url %>
     </li>
   <% end %>
 </ul>

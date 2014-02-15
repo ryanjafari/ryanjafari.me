@@ -1,6 +1,5 @@
 ---
 title: 'Twitter Bootstrap: Comparing Options For Rails'
-author: ryan
 date: 2012-04-30 22:38 -05:00
 tags: development
 ---

@@ -1,27 +1,19 @@
 ---
 pageable: true
 per_page: 10
-title: "Adventures in business, consulting, web development, web design, and more!"
-descr: "Every once in a while we've got something interesting to say about various business and software topics, so you're welcome to swing on over and see if anything is worth a read!"
+title: 'Foodie, gym rat, gamer, web developer'
+descr: 'Discussions on front-end development, games, etc.'
 ---
 
-h1 The Cetrasoft Blog
-p.lead.text-muted Making a living off writing code
+/ h1 ryan jafari
+/ p.lead.text-muted Making a living off writing code
 
 .row
   .col-sm-8
     - page_articles.each do |article|
       .article
         h2 = article.title
-        / TODO: partial
-        p.text-muted
-          => article.date.strftime('%B %e, %Y')
-          - if article.data.author
-            ' by #{article.data.author}
-          / - unless article.authors.blank?
-          /   ' by #{author_links_for article.authors}
-          - unless article.tags.blank?
-            | in #{tag_links_for article.tags}
+        = partial 'article_meta', locals: { article: article }
         = article.summary
         p = link_to 'read more...', article.url
 

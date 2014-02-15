@@ -1,6 +1,5 @@
 ---
 title: When You Need A Designer And UX Person
-author: ryan
 date: 2012-04-14 22:16 -05:00
 tags: design
 ---

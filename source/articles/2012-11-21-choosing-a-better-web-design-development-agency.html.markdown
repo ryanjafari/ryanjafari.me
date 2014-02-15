@@ -1,6 +1,5 @@
 ---
 title: Choosing a better web design/development agency
-author: ryan
 date: 2012-11-21 13:42 -05:00
 tags: consulting
 ---

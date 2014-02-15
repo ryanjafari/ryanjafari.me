@@ -1,6 +1,5 @@
 ---
 title: Your Users Don't "Get It"
-author: ryan
 date: 2012-03-12 17:30 -05:00
 tags: startups
 ---

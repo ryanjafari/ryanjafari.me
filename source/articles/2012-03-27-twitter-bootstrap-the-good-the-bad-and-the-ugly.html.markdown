@@ -1,6 +1,5 @@
 ---
 title: 'Twitter Bootstrap: the good, the bad, and the ugly'
-author: ryan
 date: 2012-03-27 00:30 -05:00
 tags: development
 ---

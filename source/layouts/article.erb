@@ -5,6 +5,8 @@
         <h2><%= page_data.title %></h2>
         <%= partial 'article_meta', locals: { article: current_page } %>
         <%= yield %>
+        <hr>
+        <%= partial 'subscribe_form', locals: { klass: 'form-inline' } %>
       </div>
     </div>
 

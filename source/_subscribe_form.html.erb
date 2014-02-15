@@ -1,0 +1,5 @@
+<% if page_data.tags %>
+  <h3 class='h4'>Want more?</h3>
+  <p>Get the latest <strong><%= tags_for(page_data.tags).first %></strong> news, tips, tricks, and GOTCHAS delivered straight to your inbox.</p>
+  <%= partial "mailchimp/#{page_data.list || 'development'}", locals: { klass: klass } %>
+<% end %>

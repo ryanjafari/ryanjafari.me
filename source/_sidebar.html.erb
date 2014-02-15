@@ -1,0 +1,44 @@
+<div class='media'>
+  <%= gravatar_image_tag 'ryan@ryanandcarlos.com', class: 'media-object pull-left img-rounded' %>
+  <div class='media-body'>
+    <h3 class='h4 media-heading'>Ryan Jafari</h3>
+    <p>Foodie, gym rat, gamer, web developer (in that order). Aspiring world traveler.</p>
+  </div>
+</div>
+
+<hr>
+
+<% if page_data.tags %>
+  <h3 class='h4'>Subscribe</h3>
+  <p>Get the latest <strong><%= tags_for(page_data.tags).first %></strong> news, tips, tricks, and GOTCHAS delivered straight to your inbox.</p>
+  <%= partial "mailchimp/#{page_data.list || 'development'}" %>
+  <hr>
+<% end %>
+
+<h3 class='h4'>Recent Articles</h3>
+<ul class='list-unstyled'>
+  <% blog.articles[0...10].each do |article| %>
+    <li>
+      <span><%= article.date.strftime('%b %e') %></span>
+      <%= link_to truncate_words(article.title, length: 5), article.url %>
+    </li>
+  <% end %>
+</ul>
+
+<h3 class='h4'>Tags</h3>
+<ul class='list-unstyled'>
+  <% blog.tags.each do |tag, articles| %>
+    <li>
+      <%= link_to "#{tag} (#{articles.size})", tag_path(tag) %>
+    </li>
+  <% end %>
+</ul>
+
+<h3 class='h4'>Archives</h3>
+<ul class='list-unstyled'>
+  <% blog.articles.group_by { |a| a.date.month }.each do |month, articles| %>
+    <% articles.group_by { |b| b.date.year }.each do |year, articles| %>
+      <li><%= link_to "#{Date::MONTHNAMES[month]} #{year}", blog_month_path(year, month) %></li>
+    <% end %>
+  <% end %>
+</ul>

@@ -1,0 +1,17 @@
+nav.navbar.navbar-default.navbar-static-top (role='navigation')
+  .container
+    / Brand and toggle get grouped for better mobile display
+    .navbar-header
+      button.navbar-toggle (type='button' data-toggle='collapse' data-target='.navbar-ex1-collapse')
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      = link_to 'ryan jafari', '/', class: "navbar-brand #{active_nav?('index')}"
+
+    / Collect the nav links, forms, and other content for toggling
+    .collapse.navbar-collapse.navbar-ex1-collapse
+      .navbar-right
+        ul.nav.navbar-nav
+          - blog.tags.each do |tag, articles|
+            li = link_to_tag tag

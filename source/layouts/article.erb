@@ -1,0 +1,27 @@
+<% wrap_layout :layout do %>
+  <div class='row'>
+    <div class='col-sm-8'>
+      <div class='article'>
+        <h2><%= page_data.title %></h2>
+        <p class='text-muted'>
+          <%= page_data.date.to_date.strftime('%B %e, %Y') %>
+          <% if page_data.author %>
+            <%= "by #{page_data.author}" %>
+          <% end %>
+          <% unless page_data.tags.blank? %>
+            <%= "in #{tag_links_for page_data.tags}" %>
+          <% end %>
+        </p>
+        <%= yield %>
+      </div>
+
+      <!-- TODO: call to action! -->
+      <!-- TODO: use copy from here? -->
+      <%#= render_partial "blog/signature_#{current_page.data.authors}" %>
+      <%#= mail_to "#{current_page.data.authors}@ryanandcarlos.com", 'Drop me a line and say hi!', class: 'btn btn-primary btn-large' %>
+    </div>
+    <div class='col-sm-3 col-sm-offset-1'>
+      <%= partial 'sidebar' %>
+    </div>
+  </div>
+<% end %>

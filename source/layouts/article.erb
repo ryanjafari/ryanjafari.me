@@ -3,9 +3,8 @@
     <div class='col-sm-8'>
       <div class='article'>
         <h2><%= page_data.title %></h2>
-        <%= partial 'article_meta', locals: { article: current_page } %>
+        <%= partial 'article_meta', locals: { article: current_page.data } %>
         <%= yield %>
-        <hr>
         <%= partial 'subscribe_form', locals: { klass: 'form-inline' } %>
       </div>
     </div>

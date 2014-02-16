@@ -131,9 +131,7 @@ end
 # This is so we can put links in markdown
 Slim::Engine.set_default_options disable_escape: true
 
-###
 # Google Analytics
-###
 if build?
   use Rack::GoogleAnalytics,
       tracker: 'UA-26589805-1',
@@ -141,6 +139,7 @@ if build?
       domain: 'cetrasoft.com'
 end
 
+# Deployment to Amazon S3
 activate :s3_sync do |s3_sync|
   s3_sync.bucket                     = 'ryanjafari.me'
   s3_sync.region                     = 'us-east-1'
@@ -152,6 +151,10 @@ activate :s3_sync do |s3_sync|
   s3_sync.acl                        = 'public-read'
   s3_sync.encryption                 = false
 end
+
+###
+# Amazon S3 object-level redirection
+###
 
 # activate :s3_redirect do |s3_redirect|
 #   s3_redirect.bucket                = 'ryanjafari.me'

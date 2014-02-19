@@ -29,7 +29,7 @@ module CustomHelpers
   end
 
   def link_to_tag(tag)
-    content_tag(:a, tag, href: "#{tag_path(tag)}")
+    content_tag(:a, tag, href: tag_path(tag))
   end
 
   # def bs_dropdown(name, options = {}, &block)
@@ -47,15 +47,15 @@ module CustomHelpers
   #   content_tag(:li, link + menu, defaults.update(options))
   # end
 
-  def contact_link(text = nil, options = {}, &block)
-    content = block_given? ? yield : text
-    defaults = {
-      encode: 'hex',
-      subject: 'My project',
-      body: "Hai guiz! I've got a hankering for some sweet coding love!"
-    }
-    mail_to 'book@cetrasoft.com', content, defaults.merge(options)
-  end
+  # def contact_link(text = nil, options = {}, &block)
+  #   content = block_given? ? yield : text
+  #   defaults = {
+  #     encode: 'hex',
+  #     subject: 'My project',
+  #     body: "Hai guiz! I've got a hankering for some sweet coding love!"
+  #   }
+  #   mail_to 'book@cetrasoft.com', content, defaults.merge(options)
+  # end
 
   def active_nav?(name, active_class = 'active')
     filename = File.basename(request.path, '.html')

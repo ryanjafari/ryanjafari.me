@@ -6,15 +6,15 @@ tags: bootstrap-and-rails
 
 _This is part one in a series entitled "Bootstrap For Rails Front-End Developers"._
 
-[Skip to the final code](#final)
-
----
-
 ### A Quick Introduction ###
 
 So you've stumbled upon this while doing some front-end work in a Rails project with Bootstrap. You might be more of a front-end developer than a Rails developer, and you might not exactly be 100% cozy with Rails quite yet. Or maybe you're a back-end guy that wants something to help deal with this front-end stuff as unobtrusively as possible. Either way, you're throwing down a ton of markup in your views and are looking for something to help you keep things clean.
 
 READMORE
+
+[Skip to the final code](#final)
+
+---
 
 Even with awesome template languages like Slim, Haml, etc. Rails views can get messy. As nice as Bootstrap is, it comes with a bunch of (probably entirely necessary) markup for things like tab components that quickly litter up your views.
 

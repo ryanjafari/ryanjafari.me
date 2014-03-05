@@ -8,11 +8,12 @@ nav.navbar.navbar-default.navbar-static-top (role='navigation')
         span.icon-bar
       = link_to 'ryan jafari', '/', class: 'navbar-brand'
 
-    .collapse.navbar-collapse.navbar-ex1-collapse
-      .navbar-right
-        ul.nav.navbar-nav
-          li class=active_nav?('index')
-            = link_to 'home', '/'
-          - blog.tags.each do |tag, articles|
-            li class=active_nav?(tag)
-              = link_to_tag tag
+    / TODO: any more relevant portfolio URLs?
+    / .collapse.navbar-collapse.navbar-ex1-collapse
+    /   .navbar-right
+    /     ul.nav.navbar-nav
+    /       li class=active_nav?('index')
+    /         = link_to 'home', '/'
+    /       - blog.tags.each do |tag, articles|
+    /         li class=active_nav?(tag)
+    /           = link_to_tag tag

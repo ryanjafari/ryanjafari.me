@@ -53,11 +53,6 @@ require 'slim'
 
 activate :livereload
 
-# You can use the Directory Indexes feature to tell Middleman to create a
-# folder for each .html file and place the built template file as the index
-# of that folder.
-activate :directory_indexes
-
 # Middleman can produce gripped versions of your HTML, CSS, and JavaScript
 activate :gzip
 
@@ -192,5 +187,10 @@ activate :blog do |blog|
   blog.per_page = 10
   blog.page_link = 'page/:num'
 end
+
+# You can use the Directory Indexes feature to tell Middleman to create a
+# folder for each .html file and place the built template file as the index
+# of that folder.
+activate :directory_indexes
 
 page 'feed.xml', layout: false

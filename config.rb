@@ -90,6 +90,7 @@ configure :build do
   activate :relative_assets
 
   # Compress images after build
+  # TODO: are we using svgo & pngout? check output
   activate :imageoptim do |imageoptim|
     imageoptim.verbose = true
   end

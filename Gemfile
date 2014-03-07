@@ -31,5 +31,3 @@ gem 'therubyracer', '~> 0.12.1'
 gem 'oj', '~> 2.5.4'
 
 gem 'nokogiri', '~> 1.6.1'
-
-gem 'bourbon', '~> 3.1.8'

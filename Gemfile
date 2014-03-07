@@ -10,7 +10,7 @@ gem 'middleman-s3_sync', '~> 3.0.24'
 
 gem 'rack-google-analytics', '~> 1.0.0'
 
-gem 'middleman-blog', '~> 3.5.1'
+gem 'middleman-blog', '~> 3.5.2'
 
 gem 'redcarpet', '~> 3.0.0'
 
@@ -18,7 +18,7 @@ gem 'middleman-syntax', '~> 2.0.0'
 
 gem 'middleman-imageoptim', '~> 0.1.4'
 
-gem 'middleman-favicon-maker', '~> 3.5'
+gem 'middleman-favicon-maker', '~> 3.5.3'
 
 gem 'middleman-minify-html', '~> 3.1.1'
 

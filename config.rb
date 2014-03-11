@@ -130,9 +130,10 @@ Slim::Engine.set_default_options disable_escape: true
 # Google Analytics
 if build?
   use Rack::GoogleAnalytics,
-      tracker: 'UA-26589805-1',
+      tracker: 'UA-48873113-1',
       multiple: true,
-      domain: 'cetrasoft.com'
+      domain: 'ryanjafari.me',
+      enhanced_link_attribution: true
 end
 
 # Deployment to Amazon S3

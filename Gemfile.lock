@@ -196,7 +196,7 @@ DEPENDENCIES
   middleman-syntax (~> 2.0.0)
   nokogiri (~> 1.6.1)
   oj (~> 2.5.4)
-  rack-google-analytics (~> 1.0.0)
+  rack-google-analytics (~> 1.0.0.pre1)
   redcarpet (~> 3.0.0)
   slim (~> 2.0.2)
   therubyracer (~> 0.12.1)

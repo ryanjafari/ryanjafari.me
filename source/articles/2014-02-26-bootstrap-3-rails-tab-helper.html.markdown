@@ -128,7 +128,7 @@ So far, so good. Let's move onto talking about the stuff that generates the corr
 
 ---
 
-The way we want to think of this is that each of our two classes, `TabCollection` and `TabItem`, should know how to render themselves, and be completely oblivious to how the other is rendered. That way, when we ask our `TabCollection` what its HTML markup looks like so that we can render our tabs, it will ask each of its `TabItem`s what their HTML markup looks like. `TabItem`s will return their HTML markup to the `TabCollection`, and `TabColleciton` will return all of that, plus its own stuff, to us. 
+The way we want to think of this is that each of our two classes, `TabCollection` and `TabItem`, should know how to render themselves, and be completely oblivious to how the other is rendered. That way, when we ask our `TabCollection` what its HTML markup looks like so that we can render our tabs, it will ask each of its `TabItem`s what their HTML markup looks like. `TabItem`s will return their HTML markup to the `TabCollection`, and `TabCollection` will return all of that, plus its own stuff, to us. 
 
 Isn't it beautiful to leverage object-oriented programming principles when tackling real-world problems? Yes, it is.
 

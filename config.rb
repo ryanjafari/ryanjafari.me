@@ -15,6 +15,9 @@
 # Disable pretty URLs for blog archive
 page '/archive/*', directory_index: false
 
+# Disable layout and pretty URLs for sitemap
+page '/sitemap.xml', layout: false, directory_index: false
+
 # A path which all have the same layout
 # with_layout :benefits do
 #   page "/benefits/*"

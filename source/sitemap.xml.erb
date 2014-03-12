@@ -1,0 +1,14 @@
+<%# NOTE: use page.path or page.source_file here %>
+<% pages = sitemap.resources.select { |page| (page.source_file =~ /\.html/ && page.source_file !~ /archive/ && page.data.published != false) } %>
+<?xml version='1.0' encoding='UTF-8'?>
+<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
+  <% pages.each do |page| %>
+    <url>
+      <%# NOTE: use page.destination_path w/ gsub or page.url here %>
+      <loc>http://ryanjafari.me<%= page.url %></loc>
+      <lastmod><%= Date.today.to_time.iso8601 %></lastmod>
+      <changefreq><%= page.data.changefreq || 'monthly' %></changefreq>
+      <priority><%= page.data.priority || '0.5' %></priority>
+    </url>
+  <% end %>
+</urlset>

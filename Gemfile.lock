@@ -102,7 +102,7 @@ GEM
       rack-livereload
     middleman-minify-html (3.1.1)
       middleman-core (~> 3.0)
-    middleman-s3_sync (3.0.24)
+    middleman-s3_sync (3.0.25)
       colorize
       fog (>= 1.10.1)
       map
@@ -192,7 +192,7 @@ DEPENDENCIES
   middleman-imageoptim (~> 0.1.4)
   middleman-livereload (~> 3.1.1)
   middleman-minify-html (~> 3.1.1)
-  middleman-s3_sync (~> 3.0.24)
+  middleman-s3_sync (~> 3.0.25)
   middleman-syntax (~> 2.0.0)
   nokogiri (~> 1.6.1)
   oj (~> 2.5.4)

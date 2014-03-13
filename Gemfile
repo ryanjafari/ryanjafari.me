@@ -4,7 +4,7 @@ gem 'middleman', '~> 3.2.2'
 
 gem 'slim', '~> 2.0.2'
 
-gem 'middleman-s3_sync', '~> 3.0.24'
+gem 'middleman-s3_sync', '~> 3.0.25'
 
 # gem 'middleman-s3_redirect', '~> 3.0.3'
 

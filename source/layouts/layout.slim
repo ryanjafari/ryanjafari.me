@@ -37,11 +37,14 @@ html (lang='en')
     / Use title if it's in the page YAML frontmatter
     title = "ryan jafari | #{page_data.title}" || 'ryan jafari'
 
-    = stylesheet_link_tag 'all'
+    - if content_for? :stylesheets
+      = yield_content :stylesheets
+    - else
+      = stylesheet_link_tag 'all'
+
     = javascript_include_tag  'all'
 
   body
     = partial 'navbar'
-    = yield_content :splash
     .container
       = yield

@@ -1,369 +1,370 @@
-// @import bourbon
+@import bootstrap
+@import bourbon/app/assets/stylesheets/bourbon
 
-// // functions and mixins
+// functions and mixins
 
-// @function strip_units($number)
-//   @return $number / ($number * 0 + 1)
+@function strip_units($number)
+  @return $number / ($number * 0 + 1)
 
-// @mixin ff7-bg($from, $to)
-//   @include linear-gradient(to bottom right, $from, $to)
+@mixin ff7-bg($from, $to)
+  @include linear-gradient(to bottom right, $from, $to)
 
-// @mixin ff7-cursor
-//   @include size($cursor-width $cursor-height)
-//   @include transform(scaleX(-1))
-//   background-image: $cursor-url
-//   content: ""
-//   z-index: 1000
-//   opacity: 1
-//   margin-left: -#{round(strip_units($cursor-width / 2))}px
+@mixin ff7-cursor
+  @include size($cursor-width $cursor-height)
+  @include transform(scaleX(-1))
+  background-image: $cursor-url
+  content: ""
+  z-index: 1000
+  opacity: 1
+  margin-left: -#{round(strip_units($cursor-width / 2))}px
 
-// @mixin ff7-materia($active: false)
-//   @include size($materia-width $materia-height)
-//   background-image: if($active, $materia-active-url, $materia-url)
-//   content: ""
+@mixin ff7-materia($active: false)
+  @include size($materia-width $materia-height)
+  background-image: if($active, $materia-active-url, $materia-url)
+  content: ""
 
-// // colors
+// colors
 
-// // TODO: name colors
-// $ff7-purple: #282753
-// $ff7-cyan: #4cd9f7
-// $ff7-gunmetal: #aeaeae
-// $ff7-gray: #727375
-// $ff7-gray-text: #a0a0a0
-// $ff7-white: white
-// $ff7-light-blue: #0055ae
-// $ff7-dark-blue: #00011a
-// $ff7-black: black
-// $ff7-yellow: #efdf06
-// $ff7-text-shadow: #212121
-// $ff7-light-pink: #720f8d
-// $ff7-dark-pink: #780c48
-// $ff7-button-text: #f0f0f0
-// $ff7-button-text-shadow: #404040
+// TODO: name colors
+$ff7-purple: #282753
+$ff7-cyan: #4cd9f7
+$ff7-gunmetal: #aeaeae
+$ff7-gray: #727375
+$ff7-gray-text: #a0a0a0
+$ff7-white: white
+$ff7-light-blue: #0055ae
+$ff7-dark-blue: #00011a
+$ff7-black: black
+$ff7-yellow: #efdf06
+$ff7-text-shadow: #212121
+$ff7-light-pink: #720f8d
+$ff7-dark-pink: #780c48
+$ff7-button-text: #f0f0f0
+$ff7-button-text-shadow: #404040
 
-// // original colors
-// // $ff7-light-blue: #0000a6
-// // $ff7-dark-blue: #00002c
+// original colors
+// $ff7-light-blue: #0000a6
+// $ff7-dark-blue: #00002c
 
-// // unused
-// // $ff7-red: #d50000
-// // $ff7-green: #50a250
+// unused
+// $ff7-red: #d50000
+// $ff7-green: #50a250
 
-// $ff7-mp-bar-start: #04fd81
-// $ff7-mp-bar-end: #c4c9c6
-// $ff7-hp-bar-start: #0180fe
-// $ff7-hp-bar-end: #c6c7c8
+$ff7-mp-bar-start: #04fd81
+$ff7-mp-bar-end: #c4c9c6
+$ff7-hp-bar-start: #0180fe
+$ff7-hp-bar-end: #c6c7c8
 
-// // images
+// images
 
-// $materia-filename: "materia.png"
-// $materia-active-filename: "materia_active.png"
-// $materia-url: image-url($materia-filename)
-// $materia-active-url: image-url($materia-active-filename)
-// $materia-width: max(image-width($materia-filename), image-width($materia-active-filename))
-// $materia-height: max(image-height($materia-filename), image-height($materia-active-filename))
+$materia-filename: "materia.png"
+$materia-active-filename: "materia_active.png"
+$materia-url: image-url($materia-filename)
+$materia-active-url: image-url($materia-active-filename)
+$materia-width: max(image-width($materia-filename), image-width($materia-active-filename))
+$materia-height: max(image-height($materia-filename), image-height($materia-active-filename))
 
-// $cursor-filename: "cursor.png"
-// $cursor-url: image-url($cursor-filename)
-// $cursor-width: image-width($cursor-filename)
-// $cursor-height: image-height($cursor-filename)
+$cursor-filename: "cursor.png"
+$cursor-url: image-url($cursor-filename)
+$cursor-width: image-width($cursor-filename)
+$cursor-height: image-height($cursor-filename)
 
-// $menu-border-filename: "border_image.png"
-// $menu-border-url: image-url($menu-border-filename)
-// $menu-border-width: strip_units(image-width($menu-border-filename)) / 3
+$menu-border-filename: "border_image.png"
+$menu-border-url: image-url($menu-border-filename)
+$menu-border-width: strip_units(image-width($menu-border-filename)) / 3
 
-// // sizes
+// sizes
 
-// $horizontal-rule-width: 2px
+$horizontal-rule-width: 2px
 
-// // extends
+// extends
 
-// .ff7-bg-default
-//   @include ff7-bg($ff7-light-blue, $ff7-dark-blue)
+.ff7-bg-default
+  @include ff7-bg($ff7-light-blue, $ff7-dark-blue)
 
-// .ff7-bg-inverse
-//   @include ff7-bg(red, black)
+.ff7-bg-inverse
+  @include ff7-bg(red, black)
 
-// .ff7-cursor
-//   @include ff7-cursor
+.ff7-cursor
+  @include ff7-cursor
 
-// .ff7-border-image
-//   @include border-image($menu-border-url $menu-border-width $menu-border-width $menu-border-width $menu-border-width stretch)
+.ff7-border-image
+  @include border-image($menu-border-url $menu-border-width $menu-border-width $menu-border-width $menu-border-width stretch)
 
-// .ff7-border
-//   @extend .ff7-border-image
-//   border-width: 6px
+.ff7-border
+  @extend .ff7-border-image
+  border-width: 6px
 
-// .ff7-border-with-fix
-//   @extend .ff7-border
-//   border-radius: 10px
+.ff7-border-with-fix
+  @extend .ff7-border
+  border-radius: 10px
 
-// .ff7-link-hover
-//   background-color: transparent
-//   color: $ff7-gray
+.ff7-link-hover
+  background-color: transparent
+  color: $ff7-gray
 
-// .ff7-form-control
-//   background-color: $ff7-purple
-//   color: $ff7-gray-text
-//   border:
-//     width: 2px
-//     style: solid
-//     radius: 0
-//     top-color: #1c1d3b
-//     right-color: #484d63
-//     bottom-color: #484d63
-//     left-color: #1c1d3b
+.ff7-form-control
+  background-color: $ff7-purple
+  color: $ff7-gray-text
+  border:
+    width: 2px
+    style: solid
+    radius: 0
+    top-color: #1c1d3b
+    right-color: #484d63
+    bottom-color: #484d63
+    left-color: #1c1d3b
 
-// .ff7-small-text
-//   text-transform: uppercase
-//   font:
-//     size: 12px
-//     weight: bold
+.ff7-small-text
+  text-transform: uppercase
+  font:
+    size: 12px
+    weight: bold
 
-// .ff7-button-border
-//   border:
-//     width: 2px
-//     style: solid
-//     top-color: #f0f0f0
-//     left-color: #c8c8c8
-//     right-color: #707070
-//     bottom-color: #404040
+.ff7-button-border
+  border:
+    width: 2px
+    style: solid
+    top-color: #f0f0f0
+    left-color: #c8c8c8
+    right-color: #707070
+    bottom-color: #404040
 
-// .ff7-button
-//   @extend .ff7-button-border
-//   background-color: $ff7-gray-text
+.ff7-button
+  @extend .ff7-button-border
+  background-color: $ff7-gray-text
+  border-radius: 0
+
+.ff7-line
+  @include border-image(-webkit-linear-gradient(left, $ff7-hp-bar-start, $ff7-hp-bar-end) 0 strip_units($horizontal-rule-width) 100%)
+  border-width: $horizontal-rule-width
+
+// for progress bars
+// .ff7-metal-bar
+//   border: 2px solid $ff7-gunmetal
 //   border-radius: 0
+//   @include linear-gradient(to bottom, #181818 0%, #595959 15%, #6b6b6b 30%, #7b7b7b, #6b6b6b 85%)
 
-// .ff7-line
-//   @include border-image(-webkit-linear-gradient(left, $ff7-hp-bar-start, $ff7-hp-bar-end) 0 strip_units($horizontal-rule-width) 100%)
-//   border-width: $horizontal-rule-width
+// overrides
 
-// // for progress bars
-// // .ff7-metal-bar
-// //   border: 2px solid $ff7-gunmetal
-// //   border-radius: 0
-// //   @include linear-gradient(to bottom, #181818 0%, #595959 15%, #6b6b6b 30%, #7b7b7b, #6b6b6b 85%)
+body
+  @include ff7-bg(transparentize($ff7-light-blue, .5), transparentize($ff7-dark-blue, .5))
+  @extend .ff7-border
+  color: $ff7-white
+  text-shadow: $ff7-text-shadow 0px 2px 0px
+  font-family: Verdana
+  background:
+    color: $ff7-black
+    repeat: no-repeat
 
-// // overrides
+hr
+  @extend .ff7-line
 
-// body
-//   @include ff7-bg(transparentize($ff7-light-blue, .5), transparentize($ff7-dark-blue, .5))
-//   @extend .ff7-border
-//   color: $ff7-white
-//   text-shadow: $ff7-text-shadow 0px 2px 0px
-//   font-family: Verdana
-//   background:
-//     color: $ff7-black
-//     repeat: no-repeat
+.page-header
+  @extend .ff7-line
 
-// hr
-//   @extend .ff7-line
+.navbar-default
+  @extend .ff7-bg-default
+  @extend .ff7-border-with-fix
 
-// .page-header
-//   @extend .ff7-line
+.navbar-inverse
+  @extend .ff7-bg-inverse
+  @extend .ff7-border-with-fix
 
-// .navbar-default
-//   @extend .ff7-bg-default
-//   @extend .ff7-border-with-fix
+.navbar-static-top
+  border-width: 0 0 6px
+  border-radius: 0
 
-// .navbar-inverse
-//   @extend .ff7-bg-inverse
-//   @extend .ff7-border-with-fix
+.nav > li > a
+  padding:
+    left: $materia-width + 5px
+    right: $materia-width + 5px
 
-// .navbar-static-top
-//   border-width: 0 0 6px
-//   border-radius: 0
+.navbar-default .navbar-brand,
+.navbar-inverse .navbar-brand
+  color: $ff7-white
+  &:hover
+    color: $ff7-gray
+  // reset from a styles
+  text-transform: inherit
+  font:
+    size: 18px
+    weight: inherit
 
-// .nav > li > a
-//   padding:
-//     left: $materia-width + 5px
-//     right: $materia-width + 5px
+.navbar-default .navbar-nav > li > a,
+.navbar-inverse .navbar-nav > li > a
+  color: $ff7-white
+  // reset from a styles
+  text-transform: inherit
+  font:
+    size: inherit
+    weight: inherit
 
-// .navbar-default .navbar-brand,
-// .navbar-inverse .navbar-brand
-//   color: $ff7-white
-//   &:hover
-//     color: $ff7-gray
-//   // reset from a styles
-//   text-transform: inherit
-//   font:
-//     size: 18px
-//     weight: inherit
+.navbar-nav > li:before
+  @include ff7-materia
+  @include position(absolute, 15px 0 0 0)
 
-// .navbar-default .navbar-nav > li > a,
-// .navbar-inverse .navbar-nav > li > a
-//   color: $ff7-white
-//   // reset from a styles
-//   text-transform: inherit
-//   font:
-//     size: inherit
-//     weight: inherit
+.navbar-nav > li.active:before
+  @include ff7-materia(true)
+  @include position(absolute, 15px 0 0 0)
 
-// .navbar-nav > li:before
-//   @include ff7-materia
-//   @include position(absolute, 15px 0 0 0)
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:hover
+  color: $ff7-gray
 
-// .navbar-nav > li.active:before
-//   @include ff7-materia(true)
-//   @include position(absolute, 15px 0 0 0)
+.navbar-default .navbar-nav > li > a:hover:before,
+.navbar-inverse .navbar-nav > li > a:hover:before
+  @extend .ff7-cursor
+  @include position(absolute, 20px 0 0 -28px)
 
-// .navbar-default .navbar-nav > li > a:hover,
-// .navbar-inverse .navbar-nav > li > a:hover
-//   color: $ff7-gray
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus
+  @extend .ff7-link-hover
+  &:before
+    display: none
 
-// .navbar-default .navbar-nav > li > a:hover:before,
-// .navbar-inverse .navbar-nav > li > a:hover:before
-//   @extend .ff7-cursor
-//   @include position(absolute, 20px 0 0 -28px)
+.navbar-default .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a
+  background-color: transparent
 
-// .navbar-default .navbar-nav > .open > a,
-// .navbar-default .navbar-nav > .open > a:hover,
-// .navbar-default .navbar-nav > .open > a:focus,
-// .navbar-inverse .navbar-nav > .open > a,
-// .navbar-inverse .navbar-nav > .open > a:hover,
-// .navbar-inverse .navbar-nav > .open > a:focus
-//   @extend .ff7-link-hover
-//   &:before
-//     display: none
+.navbar-default .navbar-nav > .active > a
+  color: $ff7-white
 
-// .navbar-default .navbar-nav > .active > a,
-// .navbar-inverse .navbar-nav > .active > a
-//   background-color: transparent
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:hover
+  @extend .ff7-link-hover
 
-// .navbar-default .navbar-nav > .active > a
-//   color: $ff7-white
+.form-control
+  @extend .ff7-form-control
+  &:focus
+    border-color: $ff7-yellow
+    box-shadow: none
+  @include placeholder
+    color: $ff7-gray-text
 
-// .navbar-default .navbar-nav > .active > a:hover,
-// .navbar-inverse .navbar-nav > .active > a:hover
-//   @extend .ff7-link-hover
+.well
+  @extend .ff7-bg-default
+  @extend .ff7-border-with-fix
 
-// .form-control
-//   @extend .ff7-form-control
-//   &:focus
-//     border-color: $ff7-yellow
-//     box-shadow: none
-//   @include placeholder
-//     color: $ff7-gray-text
+.navbar-default .dropdown-menu,
+.navbar-inverse .dropdown-menu
+  @extend .ff7-border
 
-// .well
-//   @extend .ff7-bg-default
-//   @extend .ff7-border-with-fix
+.navbar-default .dropdown-menu
+  @extend .ff7-bg-default
 
-// .navbar-default .dropdown-menu,
-// .navbar-inverse .dropdown-menu
-//   @extend .ff7-border
+.navbar-inverse .dropdown-menu
+  @extend .ff7-bg-inverse
 
-// .navbar-default .dropdown-menu
-//   @extend .ff7-bg-default
+.navbar-default, .navbar-inverse
+  .dropdown-menu .divider
+    @extend .ff7-border-image
+    border-width: 0 0 6px
 
-// .navbar-inverse .dropdown-menu
-//   @extend .ff7-bg-inverse
+.navbar-default .navbar-collapse,
+.navbar-inverse .navbar-collapse
+  @extend .ff7-border-image
+  border-width: 6px 0 0
 
-// .navbar-default, .navbar-inverse
-//   .dropdown-menu .divider
-//     @extend .ff7-border-image
-//     border-width: 0 0 6px
+@media (max-width: 767px)
+  .navbar-default .navbar-nav > li > a:hover:before,
+  .navbar-inverse .navbar-nav > li > a:hover:before
+    display: none
+    visibility: hidden
 
-// .navbar-default .navbar-collapse,
-// .navbar-inverse .navbar-collapse
-//   @extend .ff7-border-image
-//   border-width: 6px 0 0
+  .navbar-nav > li:before
+    @include position(absolute, 10px 0 0 5px)
 
-// @media (max-width: 767px)
-//   .navbar-default .navbar-nav > li > a:hover:before,
-//   .navbar-inverse .navbar-nav > li > a:hover:before
-//     display: none
-//     visibility: hidden
+  .navbar-nav > li.active:before
+    @include position(absolute, 10px 0 0 5px)
 
-//   .navbar-nav > li:before
-//     @include position(absolute, 10px 0 0 5px)
+  .nav > li > a
+    padding:
+      left: $materia-width + 10px
+      right: $materia-width + 10px
 
-//   .navbar-nav > li.active:before
-//     @include position(absolute, 10px 0 0 5px)
+@media (min-width: 768px)
+  .navbar-default .navbar-collapse,
+  .navbar-inverse .navbar-collapse
+    @include border-image(none)
 
-//   .nav > li > a
-//     padding:
-//       left: $materia-width + 10px
-//       right: $materia-width + 10px
+.dropdown-menu > li > a
+  color: $ff7-white
+  // reset from a styles
+  text-transform: inherit
+  font-size: inherit
 
-// @media (min-width: 768px)
-//   .navbar-default .navbar-collapse,
-//   .navbar-inverse .navbar-collapse
-//     @include border-image(none)
+.dropdown-menu > li > a:hover
+  @extend .ff7-link-hover
+  &:before
+    @extend .ff7-cursor
+    @include position(absolute, 0 0 0 -10px)
+    margin-top: 4px
 
-// .dropdown-menu > li > a
-//   color: $ff7-white
-//   // reset from a styles
-//   text-transform: inherit
-//   font-size: inherit
+.dropdown-header
+  @extend .ff7-small-text
+  color: $ff7-cyan
 
-// .dropdown-menu > li > a:hover
-//   @extend .ff7-link-hover
-//   &:before
-//     @extend .ff7-cursor
-//     @include position(absolute, 0 0 0 -10px)
-//     margin-top: 4px
+a, a:hover
+  color: $ff7-cyan
 
-// .dropdown-header
-//   @extend .ff7-small-text
-//   color: $ff7-cyan
+a, strong
+  @extend .ff7-small-text
 
-// a, a:hover
-//   color: $ff7-cyan
+.text-muted, .text-primary, .text-warning, .text-danger, .text-success, .text-info
+  @extend .ff7-small-text
 
-// a, strong
-//   @extend .ff7-small-text
+blockquote:not(.pull-right)
+  border-left: none
 
-// .text-muted, .text-primary, .text-warning, .text-danger, .text-success, .text-info
-//   @extend .ff7-small-text
+blockquote.pull-right
+  border-right: none
 
-// blockquote:not(.pull-right)
-//   border-left: none
+blockquote:before
+  @include triangle(30px, $ff7-yellow, down)
+  @include inline-block
 
-// blockquote.pull-right
-//   border-right: none
+code, pre
+  @extend .ff7-form-control
+  // reset from body text shadow
+  text-shadow: none
 
-// blockquote:before
-//   @include triangle(30px, $ff7-yellow, down)
-//   @include inline-block
+.btn-primary, .btn-primary:active, .btn-primary:focus
+  @extend .ff7-button
+  @extend .ff7-small-text
+  text-shadow: $ff7-button-text-shadow 0px 2px 0px
+  color: $ff7-button-text
 
-// code, pre
-//   @extend .ff7-form-control
-//   // reset from body text shadow
-//   text-shadow: none
+.btn-primary:hover
+  @extend .ff7-button-border
+  background-color: darken($ff7-gray-text, 5%)
 
-// .btn-primary, .btn-primary:active, .btn-primary:focus
-//   @extend .ff7-button
-//   @extend .ff7-small-text
-//   text-shadow: $ff7-button-text-shadow 0px 2px 0px
-//   color: $ff7-button-text
+.pager li > a, .pager li > a:hover,
+.pager .disabled > a, .pager .disabled > a:hover,
+.pager .disabled > span
+  background-color: transparent
+  border: none
 
-// .btn-primary:hover
-//   @extend .ff7-button-border
-//   background-color: darken($ff7-gray-text, 5%)
+.pager .disabled > span
+  @extend .ff7-small-text
 
-// .pager li > a, .pager li > a:hover,
-// .pager .disabled > a, .pager .disabled > a:hover,
-// .pager .disabled > span
-//   background-color: transparent
-//   border: none
+::-webkit-scrollbar
+  width: 16px
 
-// .pager .disabled > span
-//   @extend .ff7-small-text
+::-webkit-scrollbar-track
+  @extend .ff7-form-control
 
-// ::-webkit-scrollbar
-//   width: 16px
+::-webkit-scrollbar-thumb
+  @extend .ff7-button
+  &:hover
+    background-color: darken($ff7-gray-text, 5%)
 
-// ::-webkit-scrollbar-track
-//   @extend .ff7-form-control
-
-// ::-webkit-scrollbar-thumb
-//   @extend .ff7-button
-//   &:hover
-//     background-color: darken($ff7-gray-text, 5%)
-
-// .alert-info
-//   @extend .ff7-border-with-fix
-//   @include ff7-bg($ff7-light-pink, $ff7-dark-pink)
-//   color: $ff7-white
+.alert-info
+  @extend .ff7-border-with-fix
+  @include ff7-bg($ff7-light-pink, $ff7-dark-pink)
+  color: $ff7-white
 

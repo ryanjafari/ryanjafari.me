@@ -137,6 +137,11 @@ if build?
       multiple: true,
       domain: 'ryanjafari.me',
       enhanced_link_attribution: true
+
+  # Activate Disqus extension
+  activate :disqus do |d|
+    d.shortname = 'ryanjafari'
+  end
 end
 
 # Deployment to Amazon S3

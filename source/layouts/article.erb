@@ -7,6 +7,7 @@
         <%= yield %>
         <%= partial 'subscribe_form', locals: { klass: 'form-inline' } %>
       </div>
+      <%= disqus if defined? disqus %>
     </div>
 
     <div class='col-sm-3 col-sm-offset-1'>

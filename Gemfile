@@ -26,6 +26,8 @@ gem 'middleman-livereload', '~> 3.1.1'
 
 gem 'middleman-bower', '~> 1.0.2'
 
+gem 'middleman-disqus', '~> 0.0.3'
+
 gem 'therubyracer', '~> 0.12.1'
 
 gem 'oj', '~> 2.5.4'

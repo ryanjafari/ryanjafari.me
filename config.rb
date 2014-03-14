@@ -84,7 +84,7 @@ configure :build do
   activate :minify_javascript
 
   # Minify HTML on build
-  activate :minify_html
+  #activate :minify_html
 
   # Enable cache buster
   activate :cache_buster

@@ -12,7 +12,7 @@ So you've stumbled upon this while doing some front-end work in a Rails project 
 
 READMORE
 
-[Skip to the final code](#final)
+[Skip to the final code.](#final)
 
 ---
 

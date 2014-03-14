@@ -1,6 +1,11 @@
 doctype html
 html (lang='en')
   head
+    / Use title if it's in the page YAML frontmatter
+    title = "ryan jafari | #{page_data.title}" || 'ryan jafari'
+    meta name="author"      content="Ryan Jafari"
+    meta name="description" content="#{page_data.descr}"
+
     meta (charset='utf-8')
 
     / Always force latest IE rendering engine or request Chrome Frame
@@ -8,9 +13,6 @@ html (lang='en')
 
     / Something for responsive
     meta (name='viewport' content='width=device-width, initial-scale=1')
-
-    meta (name='author'      content='Ryan Jafari')
-    meta (name='description' content=page_data.descr)
 
     / TODO: use favicon_link_tag & apple_touch_favicon_link_tag if possible
     / TODO: actually get a favicon...
@@ -33,9 +35,6 @@ html (lang='en')
     link (rel='shortcut icon'                                 href='favicon-16x16.png')
     link (rel='shortcut icon'                                 href='favicon.png')
     link (rel='icon' type='image/ico'                         href='favicon.ico')
-
-    / Use title if it's in the page YAML frontmatter
-    title = "ryan jafari | #{page_data.title}" || 'ryan jafari'
 
     - if content_for? :stylesheets
       = yield_content :stylesheets

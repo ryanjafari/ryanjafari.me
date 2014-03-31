@@ -6,6 +6,8 @@ tags: mongodb
 
 The other day [Carlos E. Ramirez III](http://www.linkedin.com/in/carlosramireziii) and I were revisiting work in Mongoid when we happened on a couple of gotchas that took us longer to wrap our heads around than we would have preferred. Here they are:
 
+READMORE
+
 ### Specifying Mongoid's 'default' option on another field causes weirdness with the `changes` method ###
 
 We had something like this:

@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /blog/calendar
+Disallow: /blog/tags
+Disallow: /page
+Disallow: /ff7-bootstrap
+Disallow: /archive
+Disallow: /articles/tags
+Disallow: /articles/2014
+Disallow: /articles/2012
+Disallow: /articles/2011

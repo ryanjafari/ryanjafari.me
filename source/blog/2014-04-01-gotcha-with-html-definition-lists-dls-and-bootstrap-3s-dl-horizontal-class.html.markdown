@@ -10,6 +10,8 @@ tags: bootstrap-and-rails
   <p>"When you use DLs, you have to ensure there is some sort of content in every DD, otherwise the browser will render it out of order."</p>
 </blockquote>
 
+READMORE
+
 I discovered that this seems to be some quirkiness with Twitter Bootstrap 3 and its `dl-horizontal` CSS class (the "issue" does not apply to DLs that do not have this class applied).
 
 I'm unsure if the Bootstrap team expects this behavior or not, but for us it was undesirable. Let me show you what I mean:

@@ -78,7 +78,7 @@ If you're doing the Bootstrap + Rails thing like we always are, check out this d
 def definition_list_pair(model, attr_name, options={})
     label = options[:label] || attr_name.to_s.titleize
     value = options[:value] || model.send(attr_name)
-    value = '-' unless strip_tags(value).presence
+    value = '-' unless strip_tags(value).blank?
     content_tag(:dt, label) + content_tag(:dd, value)
 end
 ```

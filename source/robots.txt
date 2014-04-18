@@ -8,3 +8,4 @@ Disallow: /articles/tags
 Disallow: /articles/2014
 Disallow: /articles/2012
 Disallow: /articles/2011
+Disallow: /error

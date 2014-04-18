@@ -94,9 +94,9 @@ configure :build do
 
   # Compress images after build
   # TODO: are we using svgo & pngout? check output
-  activate :imageoptim do |imageoptim|
-    imageoptim.verbose = true
-  end
+  # activate :imageoptim do |imageoptim|
+  #   imageoptim.verbose = true
+  # end
 
   # Or use a different image path
   # set :http_path, "/Content/images/"

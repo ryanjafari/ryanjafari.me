@@ -1,16 +1,18 @@
 ---
 title: rbenv not behaving on Nitrous.io boxes
 date: 2014-04-17 23:04 EDT
-tags: ruby, nitrous.io
+tags: nitrous.io
 ---
 
 ### Obligatory Nitrous.io review that you didn't ask for ###
 
-Girls and boys. [Skip the BS](#solution).
+Girls and boys.
 
 Nitrous.io has been a slight bit of an adventure for me. An ambitious project
 that is raising a whole boat load of money doing what it does. To the tune of
 something like $6.65 million bucks.
+
+[Skip the BS](#solution)
 
 Now if you're a fan of crappy pizza, that can buy you A LOT of crappy pizza.
 Let's see...
@@ -31,7 +33,8 @@ understandably so) for a guy like me building apps with a save-refresh-save-refr
 workflow. This is especially the case if you're doing front-end stuff and need
 to see quick feedback on visual changes. It really does take a couple seconds
 too many to bear for changes to be sent from your machine to the box with your
-server running on it.
+server running on it. Our connection speed seems to be pretty good (?): 109.47 Mbps
+download and 24.78 Mbps upload.
 
 CPU and memory resource allocation on boxes is wonky. From time to time I'll
 experience extreme slow downs and random out-of-memory errors. Support has been
@@ -44,7 +47,7 @@ computers and into the cloud.*
 
 ### 'the F does this have to do with rbenv? ###
 
-<img src='wtf.jpeg' width='25%' class='pull-right img-rounded img-left' />
+<img src='wtf.jpg' width='25%' class='pull-right img-rounded img-left' />
 
 Well the general wonkiness of Nitrous.io in its fledgling days segues nicely into
 the wonkiness I was experiencing when trying to install rbenv on my box.
@@ -76,3 +79,5 @@ unset GEM_HOME
 unset GEM_PATH
 ```
 Now for some pizza. I just ordered a medium Pepperoni.
+
+<img src='pepperoni.jpg' width='25%' class='img-rounded' />

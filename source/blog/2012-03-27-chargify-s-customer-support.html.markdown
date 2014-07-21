@@ -1,7 +1,7 @@
 ---
 title: "Chargify's Customer Support"
 date: 2012-03-27 01:35 -05:00
-tags: development
+tags: e-commerce
 ---
 
 [Chargify](http://chargify.com/) is a fully-featured recurring billing management system for software-as-a-service applications that allows for easy integration with your application via API. It also has hosted pages if you want to go the less custom, but easier route. Before I go into rage mode, I will say that Chargify is a very cool product with generally excellent tools and API documentation for we developers.

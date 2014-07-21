@@ -9,11 +9,12 @@ nav.navbar.navbar-default.navbar-static-top (role='navigation')
       = link_to 'ryan jafari', '/', class: 'navbar-brand'
 
     / TODO: any more relevant portfolio URLs?
-    / .collapse.navbar-collapse.navbar-ex1-collapse
-    /   .navbar-right
-    /     ul.nav.navbar-nav
-    /       li class=active_nav?('index')
-    /         = link_to 'home', '/'
-    /       - blog.tags.each do |tag, articles|
-    /         li class=active_nav?(tag)
-    /           = link_to_tag tag
+    .collapse.navbar-collapse.navbar-ex1-collapse
+      .navbar-right
+        ul.nav.navbar-nav
+          li = link_to 'My Consultancy', 'http://ryanandcarlos.com/', target: :new
+          / li class=active_nav?('index')
+          /   = link_to 'home', '/'
+          / - blog.tags.each do |tag, articles|
+          /   li class=active_nav?(tag)
+          /     = link_to_tag tag

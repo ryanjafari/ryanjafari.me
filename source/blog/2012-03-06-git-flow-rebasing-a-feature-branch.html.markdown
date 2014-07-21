@@ -1,7 +1,7 @@
 ---
 title: "git flow: rebasing a feature branch"
 date: 2012-03-06 18:57 -05:00
-tags: development
+tags: git
 ---
 
 And so the saga continues. Today my good coding ninja/monkey/rockstar/overlord/&lt;enter other catchy recruiter name-calling here&gt; friend Carlos told me that I could get an old git flow feature branch up to speed with our main develop branch by rebasing it against the current develop branch.

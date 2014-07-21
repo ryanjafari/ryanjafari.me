@@ -1,7 +1,7 @@
 ---
 title: "git flow: The current HEAD is no feature branch"
 date: 2012-03-05 22:55 -05:00
-tags: development
+tags: git
 ---
 
 Say what??

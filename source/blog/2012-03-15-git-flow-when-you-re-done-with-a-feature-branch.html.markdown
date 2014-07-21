@@ -1,7 +1,7 @@
 ---
 title: "git flow: when you're done with a feature branch"
 date: 2012-03-15 20:05 -05:00
-tags: development
+tags: git
 ---
 
 UPDATE: It's probably also a good idea to rebase your feature branch against your current develop branch before you finish it. This way, you can ease a bit of the pain of merge conflicts since when you finish your feature you will have already rebased against the branch that the finish merges to (develop).

@@ -1,7 +1,7 @@
 ---
 title: 'Twitter Bootstrap: the good, the bad, and the ugly'
 date: 2012-03-27 00:30 -05:00
-tags: development
+tags: bootstrap
 ---
 
 CSS prototyping frameworks are convenient tools that can give your app cool "out-of-the-box" (and consistent) visual elements and styling (and in some cases interactivity too).

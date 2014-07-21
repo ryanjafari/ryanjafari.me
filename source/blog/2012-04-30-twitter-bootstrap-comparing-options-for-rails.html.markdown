@@ -1,7 +1,7 @@
 ---
 title: 'Twitter Bootstrap: Comparing Options For Rails'
 date: 2012-04-30 22:38 -05:00
-tags: development
+tags: bootstrap-and-rails
 ---
 
 So we've jumped on the Bootstrap bandwagon and I do offer my sincerest apologies: it is in fact a great front-end framework: very easy to use, good looking, and well implemented. Recently we needed to figure out what Rails gem we were going to use for TBS integration. Before I give you our notes, you'd do well to take a look at the following resources: the official [Batescast](http://railscasts.com/episodes/328-twitter-bootstrap-basics) (the premium episode is also good, describing SimpleForm integration with TBS, etc.) and [this](http://rubysource.com/twitter-bootstrap-less-and-sass-understanding-your-options-for-rails-3-1/) article on TBS gem options. Running through all of this, I wrote up these notes:

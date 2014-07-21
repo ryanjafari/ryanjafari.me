@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'middleman', '~> 3.2.2'
 
-gem 'slim', '~> 2.0.2'
+gem 'slim', '~> 2.0.3'
 
 gem 'middleman-s3_sync', '~> 3.0.25'
 

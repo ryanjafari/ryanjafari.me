@@ -22,7 +22,7 @@ gem 'middleman-favicon-maker', '~> 3.5.3'
 
 gem 'middleman-minify-html', '~> 3.1.1'
 
-gem 'middleman-livereload', '~> 3.1.1'
+gem 'middleman-livereload', '~> 3.3.4'
 
 gem 'middleman-bower', '~> 1.0.2'
 

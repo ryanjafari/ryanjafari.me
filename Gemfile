@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+# unable to upgrade
 gem 'middleman', '~> 3.2.2'
 
 gem 'slim', '~> 2.0.3'
@@ -10,6 +11,7 @@ gem 'middleman-s3_sync', '~> 3.0.30'
 
 gem 'rack-google-analytics', '~> 1.1.0'
 
+# unable to upgrade
 gem 'middleman-blog', '~> 3.5.2'
 
 gem 'redcarpet', '~> 3.0.0'

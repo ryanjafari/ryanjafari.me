@@ -8,7 +8,7 @@ gem 'middleman-s3_sync', '~> 3.0.25'
 
 # gem 'middleman-s3_redirect', '~> 3.0.3'
 
-gem 'rack-google-analytics', '~> 1.0.0.pre1'
+gem 'rack-google-analytics', '~> 1.1.0'
 
 gem 'middleman-blog', '~> 3.5.2'
 

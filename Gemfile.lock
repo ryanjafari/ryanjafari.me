@@ -126,7 +126,7 @@ GEM
     pmap (1.0.1)
     progress (3.0.0)
     rack (1.5.2)
-    rack-google-analytics (1.0.0)
+    rack-google-analytics (1.1.0)
       actionpack
       activesupport
     rack-livereload (0.3.15)
@@ -189,7 +189,7 @@ DEPENDENCIES
   middleman-syntax (~> 2.0.0)
   nokogiri (~> 1.6.1)
   oj (~> 2.5.4)
-  rack-google-analytics (~> 1.0.0.pre1)
+  rack-google-analytics (~> 1.1.0)
   redcarpet (~> 3.0.0)
   slim (~> 2.0.3)
   therubyracer (~> 0.12.1)

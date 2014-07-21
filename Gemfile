@@ -18,9 +18,9 @@ gem 'middleman-syntax', '~> 2.0.0'
 
 gem 'middleman-imageoptim', '~> 0.1.4'
 
-gem 'middleman-favicon-maker', '~> 3.5.3'
+# gem 'middleman-favicon-maker', '~> 3.5.3'
 
-gem 'middleman-minify-html', '~> 3.1.1'
+gem 'middleman-minify-html', '~> 3.4.0'
 
 gem 'middleman-livereload', '~> 3.3.4'
 

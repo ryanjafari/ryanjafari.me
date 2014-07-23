@@ -48,7 +48,7 @@ Ok I understand, but what *exactly* is this debt? Wikipedia puts it pretty nicel
 
 The debt is coding work you need to get done to keep things tidy and well-architected: separating code into modules, removing duplicate/unused/temporary code, etc.
 
-#### When the tower falls ####
+### When the tower falls ###
 
 So what happens when the Jenga tower falls? What's the analog to my software business? Great questions, and this is where it gets potentially worse than Jenga. In Jenga, when it all comes down, everyone knows it and has a big laugh. It's obvious and it's noisy and embarrassing for who loses. But a software collapse isn't always as apparent. Sure, your website could go down, but you'd probably be lucky if it was something that noticeable...
 
@@ -56,8 +56,21 @@ Sometimes it can take years before the impact of putting in that last block is f
 
 Tech. debt is a tricky beast because more features mean more money, right? It may seem that way, but companies like Apple and 37signals have shown us that sometimes less can be more. Less is easier to manage. Less costs less and keeps profits high. If you can sell less, you should.
 
+#### Why else do things go south? ####
 
-### An example horror story ###
+Aside from just poor management and supervision of the product due to being  unaware of the concepts above, there are other ways that code can get really stinky.
+
+##### When code changes hands frequently #####
+
+When you've got a new primary developer on a project each month, you'll bet your bottom line that you likely have some code problems. It usually starts out good with the first developer... they're coming in fresh and want to do things the right way. They do a decent job architecting the app. Toss some deadlines at them and they make some compromises, building up a bit of debt. Then that developer leaves and you have the next one on board. They try to do things right (or not), but see the compromises of the last one which makes their life difficult. They stop caring after a while, and cut more corners. After a while you've got a pile of spaghetti code with a heaping serving of debt.
+
+##### Outsourcing #####
+
+There are certain projects and situations where, when managed aggressively, outsourcing can work out. Also keep in mind, not all outsourced teams are created equal. Like anything, most are average, some are terrible, and a few are great. Still, the focus of a lot of these outsourced teams in my experience, is not to care too much about the integrity of your code, but to get stuff done fast and on the cheap (although this seems to be changing since one of my clients told me today he's paying $7,500 per month for two India-based developers of intermediate expertise; this seems a bit much). Anyway, I've seen fast outsourced teams; I've seen cheap outsourced teams; but I have yet to see an outsourced team that provides stellar, well-architected code, especially from a front-end standpoint (as is my specific expertise). Just plain awful ten times out of ten. I'd love to find one that proves me wrong, because it would be of great value to my business and the business of my clients.
+
+If you're building a quick prototype with a strapped budget that is basically throw away once you get real funding, it makes a lot of sense to go this route. If you're investing many thousands of dollars in an app that you expect to scale to production and more, then seriously beware.
+
+### An example horror story of poor product management ###
 
 We had a client once who came to us with a Ruby on Rails application built by a PHP programmer. Because of this, they didn't have the requisite savvy to leverage the power of the Rails framework to their advantage. What does this mean? It means that the programmer was writing things from scratch that Rails already provided; he just didn't know any better.
 

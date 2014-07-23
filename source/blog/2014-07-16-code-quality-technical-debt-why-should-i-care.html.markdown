@@ -77,6 +77,6 @@ As clients, you should always have a person or team you trust overseeing develop
 
 If you're struggling with an app you feel is burdened by poor code quality and technical debt, check out our [Website Watchdog](http://ryanandcarlos.com/watchdog) package that can sniff out your app's silent killers.
 
-<a href='http://ryanandcarlos.com/watchdog' class='btn btn-primary' target='new'>Learn more about Watchdog</a>
+<a href='http://ryanandcarlos.com/watchdog' class='btn btn-primary' target='new'>Learn more about Website Watchdog</a>
 
 

@@ -4,6 +4,8 @@ date: 2014-07-21 19:54 EDT
 tags: consulting
 ---
 
+<img src='rfp.jpg' width='40%' class='pull-right img-left' />
+
 So many development firms to choose from and so little time. You've decided to write an RFP (request for proposals) so that you can get your message out to as many qualified teams as you can as efficiently as you can. Time is money, and you just don't have the manpower to talk one on one with all these tech. teams.
 
 You've come here looking for help on writing a great RFP; probably searching for an outline for a good solid foundation. Great. I'm going to tell you exactly how to write a world-class RFP: _by not writing one at all._
@@ -71,7 +73,6 @@ If your RFP lands in the hands of a copywriter-type, they'll look at winning you
 #### The sales guy's shenanigans ####
 
 The sales guy is going to try to get a hold of you via email or phone and more or less flag your RFP in favor of trying to get you to like him. He's good at this too. If you end up talking to him, you probably will like him. This is better than the other two because at least it forces a dialog. Often times the sales guy will say and do whatever to win your business. Your project doesn't need "whatever".
-
 
 ---
 

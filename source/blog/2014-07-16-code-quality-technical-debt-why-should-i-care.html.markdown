@@ -8,6 +8,8 @@ Is code quality important? Does it really matter? What harm can "bad code" do?
 
 It's been a real struggle for my consultancy to demonstrate the importance of code quality and technical debt to our clients. I take a tremendous amount of pride in our work and consider our code to be the best of the best, especially against some of the horrors we've come across in our day. Still, it seems nearly impossible to convey this to someone who doesn't have a background in technology.
 
+READMORE
+
 Whether you've reached my article because you're a technologist struggling with this same problem, or you are non-technical person wondering why you should care, I hope I can enlighten and inform you on the differences between code quality and technical debt, and why they are important to your clients and business.
 
 ### Code quality ###

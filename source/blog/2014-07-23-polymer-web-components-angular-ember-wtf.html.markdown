@@ -4,9 +4,11 @@ date: 2014-07-23 16:14 EDT
 tags: web-components
 ---
 
-<img src='polymer_angular_ember.png' width='40%' class='pull-right img-left' style='margin-bottom:15px;'/>
-
 So like I was, you're confused about Polymer, Web Components, Angular/Ember and the whole deal. How they relate to one another, what is a replacement for what, what's gaining traction, what's just hype, etc.
+
+READMORE
+
+<img src='polymer_angular_ember.png' width='40%' class='pull-right img-left' style='margin-bottom:11px;'/>
 
 It started when a client reached out to me yesterday and recommended I take a look at the <a href='http://www.polymer-project.org/' target='_blank'>Polymer project</a>. He said it built upon Web Components, which I had read the spec for in the past, but it was a little fuzzy in my memory and I needed some brushing up. I've been a long time Bootstrap + Rails guy, always toying with whatever the latest JS framework gaining traction is. I've typically tried to stay in the sweet spot of fairly ubiqutous and stable frameworks, only seldom venturing into the true unknown/experimental stuff.
 

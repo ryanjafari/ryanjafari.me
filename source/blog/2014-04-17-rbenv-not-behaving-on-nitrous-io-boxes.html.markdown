@@ -12,6 +12,8 @@ Nitrous.io has been a slight bit of an adventure for me. An ambitious project
 that is raising a whole boat load of money doing what it does. To the tune of
 something like $6.65 million bucks.
 
+READMORE
+
 [Skip the BS](#solution)
 
 Now if you're a fan of crappy pizza, that can buy you A LOT of crappy pizza.

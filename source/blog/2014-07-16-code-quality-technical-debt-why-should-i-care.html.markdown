@@ -12,7 +12,7 @@ Whether you've reached my article because you're a technologist struggling with 
 
 ### Code quality ###
 
-<img src='wtfs.png' width='40%' class='pull-right img-rounded img-left' />
+<img src='wtfs.png' width='40%' class='pull-right img-left' />
 
 Software quality can refer to:
 

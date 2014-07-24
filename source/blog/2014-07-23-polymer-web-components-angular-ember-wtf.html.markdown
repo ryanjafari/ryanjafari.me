@@ -4,7 +4,7 @@ date: 2014-07-23 16:14 EDT
 tags: web-components
 ---
 
-<img src='polymer_angular_ember.png' width='40%' class='pull-right img-rounded img-left' style='margin-bottom:15px;'/>
+<img src='polymer_angular_ember.png' width='40%' class='pull-right img-left' style='margin-bottom:15px;'/>
 
 So like I was, you're confused about Polymer, Web Components, Angular/Ember and the whole deal. How they relate to one another, what is a replacement for what, what's gaining traction, what's just hype, etc.
 

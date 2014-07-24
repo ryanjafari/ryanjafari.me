@@ -87,6 +87,6 @@ Get on the same page with a company's values. Read their case studies and check 
 
 If you're looking for a serious approach to ironing out the functional and technical specifications of your project, to get it done the right way, you'll definitely want to check out our **Roadmapper** service. Roadmapper will prepare you with a precise project blueprint that you can execute with any development firm of your choosing. Start off on the right foot: have the confidence you never had when creating your own RFP with Roadmapper.
 
-<a href='http://ryanandcarlos.com/roadmapper' class='btn btn-primary' target='new'>Learn more about Roadmapper</a>
+<a href='http://ryanandcarlos.com/roadmapper' class='btn btn-primary' target='_blank'>Learn more about Roadmapper</a>
 
 

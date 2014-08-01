@@ -10,9 +10,9 @@ READMORE
 
 <img src='rfp.jpg' width='40%' class='pull-right img-left' />
 
-You've come here looking for help on writing a great RFP; probably searching for an outline for a good solid foundation. Great. I'm going to tell you exactly how to write a world-class RFP: _by not writing one at all._
+You've come here looking for help on writing a great RFP; probably searching for an outline for a good solid foundation. Great. The problem is that you're probably not as equipped as you think you are to start writing one.
 
-Proposals, in the sense that we're used to them, are a monolithic waste of time. In two words: they suck. There's nothing wrong with wanting to get things done efficiently, but there are some really big flaws with the RFP approach that you should be aware of. Let's explore why RFPs suck so bad before I give you some suggestions on how to go about things a bit differently:
+There's nothing wrong with wanting to get things done efficiently, but there are some really big pitfalls with the RFP approach that you should be aware of if you're not experienced with it. Let's explore what can go wrong with RFPs before I give you some suggestions on how to go about things a bit differently:
 
 ### You're not an expert ###
 

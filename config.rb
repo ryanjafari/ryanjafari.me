@@ -44,7 +44,7 @@ page '/sitemap.xml', layout: false, directory_index: false
 # Application Config
 ###
 
-if File.exists?('.s3_sync')
+if File.exist?('.s3_sync')
   APP_CONFIG = YAML.load_file('.s3_sync')
 else
   puts "WARNING: could not find an '.s3_sync' file in the root
@@ -62,7 +62,21 @@ activate :gzip
 activate :syntax, css_class: 'codehilite'
 
 set :markdown_engine, :redcarpet
-set :markdown, fenced_code_blocks: true, smartypants: true, layout_engine: :erb
+set :markdown,  no_intra_emphasis: true,
+                tables: true,
+                fenced_code_blocks: true,
+                autolink: true,
+                disable_indented_code_blocks: true,
+                strikethrough: true,
+                lax_spacing: false,
+                space_after_headers: true,
+                superscript: true,
+                underline: true,
+                highlight: true,
+                quote: true,
+                footnotes: true,
+                smartypants: true,
+                layout_engine: :erb
 
 set :css_dir, 'assets/stylesheets'
 set :js_dir, 'assets/javascripts'

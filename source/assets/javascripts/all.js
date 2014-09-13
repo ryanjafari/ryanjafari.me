@@ -10,7 +10,7 @@ $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
 
 $(document).on('ready', function(event) {
   $('[data-toggle=tooltip]').tooltip();
-  if (typeof(ga) !== 'undefined') {
+  if (typeof(ga) !== 'undefined' && $(window).scrollTop() === 0) {
     tracker_setup();
   }
 });
@@ -27,7 +27,7 @@ function tracker_setup() {
 }
 
 function halfway_detect() {
-  var window_scroll_pos = $(this).scrollTop();
+  var window_scroll_pos = $(window).scrollTop();
   if (window_scroll_pos + navbar_height >= halfway_mark) {
     ga('send', 'event', 'halfway mark', 'read');
     $(window).unbind('scroll');

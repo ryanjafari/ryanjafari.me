@@ -11,7 +11,6 @@ gem 'middleman-s3_sync', '~> 3.0.35'
 
 gem 'rack-google-analytics', '~> 1.2.0'
 
-# unable to upgrade
 gem 'middleman-blog', '~> 3.5.3'
 
 gem 'redcarpet', '~> 3.0.0'

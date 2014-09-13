@@ -56,9 +56,6 @@ require 'slim'
 
 activate :livereload
 
-# Middleman can produce gripped versions of your HTML, CSS, and JavaScript
-activate :gzip
-
 activate :syntax, css_class: 'codehilite'
 
 set :markdown_engine, :redcarpet
@@ -105,6 +102,9 @@ configure :build do
 
   # Use relative URLs
   activate :relative_assets
+
+  # Middleman can produce gripped versions of your HTML, CSS, and JavaScript
+  activate :gzip
 
   # Compress images after build
   # TODO: are we using svgo & pngout? check output

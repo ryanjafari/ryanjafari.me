@@ -2,9 +2,11 @@
   <div class='row'>
     <div class='col-sm-8'>
       <div class='article'>
-        <h2><%= page_data.title %></h2>
-        <%= partial 'article_meta', locals: { article: current_page.data } %>
-        <%= yield %>
+        <div class='content-area' data-measure='content-area'>
+          <h2><%= page_data.title %></h2>
+          <%= partial 'article_meta', locals: { article: current_page.data } %>
+          <%= yield %>
+        </div>
         <%= partial 'subscribe_form', locals: { klass: 'form-inline' } %>
       </div>
       <%= disqus if defined? disqus %>

@@ -1,7 +1,10 @@
 ---
 pageable: true
+per_page: 10
+title: Archived articles
 ---
-<h1>Archive for
+
+<h2>Archive for
   <% case page_type
      when 'day' %>
     <%= Date.new(year, month, day).strftime('%b %e %Y') %>
@@ -10,24 +13,26 @@ pageable: true
   <% when 'year' %>
     <%= year %>
   <% end %>
-</h1>
+</h2>
 
 <% if paginate %>
   <p>Page <%= page_number %> of <%= num_pages %></p>
-
-  <% if prev_page %>
-    <p><%= link_to 'Previous page', prev_page %></p>
-  <% end %>
 <% end %>
 
 <ul>
-  <% page_articles.each_with_index do |article, i| %>
-    <li><%= link_to article.title, article %> <span><%= article.date.strftime('%b %e') %></span></li>
+  <% page_articles.each do |article| %>
+    <li>
+      <span><%= article.date.strftime('%b %e') %></span>
+      <%= link_to article.title, article %>
+    </li>
   <% end %>
 </ul>
 
 <% if paginate %>
   <% if next_page %>
     <p><%= link_to 'Next page', next_page %></p>
+  <% end %>
+  <% if prev_page %>
+    <p><%= link_to 'Previous page', prev_page %></p>
   <% end %>
 <% end %>

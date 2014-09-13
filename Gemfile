@@ -5,14 +5,14 @@ gem 'middleman', '~> 3.2.2'
 
 gem 'slim', '~> 2.0.3'
 
-gem 'middleman-s3_sync', '~> 3.0.30'
+gem 'middleman-s3_sync', '~> 3.0.35'
 
 # gem 'middleman-s3_redirect', '~> 3.0.3'
 
-gem 'rack-google-analytics', '~> 1.1.0'
+gem 'rack-google-analytics', '~> 1.2.0'
 
 # unable to upgrade
-gem 'middleman-blog', '~> 3.5.2'
+gem 'middleman-blog', '~> 3.5.3'
 
 gem 'redcarpet', '~> 3.0.0'
 

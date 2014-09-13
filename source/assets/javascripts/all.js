@@ -8,21 +8,28 @@ $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
   $(this).ekkoLightbox();
 });
 
-var navbar_height;
-var content_area_height;
-var halfway_mark;
-
 $(document).on('ready', function(event) {
   $('[data-toggle=tooltip]').tooltip();
-  navbar_height = $('[data-measure=navbar]').outerHeight(true);
-  content_area_height = $('[data-measure=content-area]').height();
-  halfway_mark = (content_area_height) / 2;
+  if (typeof(ga) !== 'undefined') {
+    tracker_setup();
+  }
 });
 
-$(window).scroll(function() {
+function tracker_setup() {
+  navbar = $('[data-measure=navbar]');
+  content_area = $('[data-measure=content-area]');
+  if (navbar.length && content_area.length) {
+    navbar_height = navbar.outerHeight(true);
+    content_area_height = content_area.height();
+    halfway_mark = (content_area_height) / 2;
+    $(window).scroll(halfway_detect);
+  }
+}
+
+function halfway_detect() {
   var window_scroll_pos = $(this).scrollTop();
   if (window_scroll_pos + navbar_height >= halfway_mark) {
     ga('send', 'event', 'halfway mark', 'read');
     $(window).unbind('scroll');
   }
-});
+}

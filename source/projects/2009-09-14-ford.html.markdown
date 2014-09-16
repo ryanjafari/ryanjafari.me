@@ -1,0 +1,8 @@
+---
+title: Ford
+date: 2009-09-14 16:51 EDT
+tags: java, struts, smartfox
+type: online multiplayer game
+description: Multiplayer, real-time car customizer built on socket server technology for Ford's 2010 Mustang campaign
+---
+

@@ -1,0 +1,8 @@
+---
+title: Tripwing
+date: 2014-09-14 17:06 EDT
+tags: rails, slim, sass, coffeescript, bootstrap
+type: web application
+description: Multi-day tour search engine and itinerary builder for travel professionals
+---
+

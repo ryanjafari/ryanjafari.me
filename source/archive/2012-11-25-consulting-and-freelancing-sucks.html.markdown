@@ -1,9 +1,8 @@
----
+<!-- ---
 title: Consulting and Freelancing Sucks
 date: 2012-11-25 22:17 -05:00
 tags: consulting
-layout: article
----
+--- -->
 
 Think your consulting or freelance gig sucks?
 

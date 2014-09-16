@@ -6,6 +6,10 @@
 // @import pygments/css/rrt
 @import ekko-lightbox/dist/ekko-lightbox
 
+.label
+  padding: 4px 7px 4px
+  vertical-align: 0px
+
 @media (min-width: 992px)
   .container
     width: 970px
@@ -15,8 +19,6 @@ pre
 
 .article
   margin-bottom: 60px
-  &:first-child h2
-    margin-top: 0
 
 .truncate
   overflow: hidden
@@ -26,3 +28,11 @@ pre
 .img-left
   margin-left: 11px
 
+a[data-toggle='collapse']
+  text-decoration: none
+  &:not(.collapsed):before
+    @extend .fa
+    @extend .fa-angle-down
+  &.collapsed:before
+    @extend .fa
+    @extend .fa-angle-up

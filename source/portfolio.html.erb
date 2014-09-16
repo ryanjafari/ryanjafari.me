@@ -1,0 +1,60 @@
+---
+pageable: true
+title: "Ryan's portfolio of work"
+descr: "Some things I've done over the years for work, university, and fun"
+blog: 'projects'
+---
+
+<h2>Projects</h2>
+<p class='text-muted' style='margin-bottom:30px;'>
+  Some things I've done over the years for work, university, and fun.
+</p>
+<ul class='list-group'>
+  <% page_articles.each_with_index do |project, i| %>
+    <li class='list-group-item'>
+      <div class='row'>
+        <div class='col-xs-3 col-sm-3 col-md-3 col-lg-3'>
+          <%= link_to " #{project.title}", "#collapse_#{i}",
+                      class: 'collapsed', data: { toggle: 'collapse' } %>
+        </div>
+        <div class='col-xs-3 col-sm-3 col-md-3 col-lg-3'>
+          <span class='text-muted'>
+            <%= project.data.type %>
+          </span>
+        </div>
+        <div class='col-xs-4 col-sm-4 col-md-4 col-lg-4'>
+          <% project.tags.each do |tag| %>
+            <span class='label label-primary'><%= tag %></span>
+          <% end %>
+        </div>
+        <div class='col-xs-2 col-sm-2 col-md-2 col-lg-2'>
+          <%= project.date.year %>
+        </div>
+      </div>
+      <div id='collapse_<%= i %>' class='collapse'>
+        <br>
+        <p><%= project.data.description %></p>
+        <div class='row'>
+          <%= screens_for_project(project) %>
+        </div>
+      </div>
+    </li>
+  <% end %>
+</ul>
+
+<ul class='pager'>
+  <li class='previous <%= prev_page ? '' : 'disabled' %>'>
+    <% if prev_page %>
+      <%= link_to '&larr; Newer', prev_page.url %>
+    <% else %>
+      <span>&larr; Newer</span>
+    <% end %>
+  </li>
+  <li class='next <%= next_page ? '' : 'disabled' %>'>
+    <% if next_page %>
+      <%= link_to 'Older &rarr;', next_page.url %>
+    <% else %>
+      <span>Older &rarr;</span>
+    <% end %>
+  </li>
+</ul>

@@ -68,7 +68,6 @@ set :markdown,  no_intra_emphasis: true,
                 lax_spacing: false,
                 space_after_headers: true,
                 superscript: true,
-                underline: true,
                 highlight: true,
                 quote: true,
                 footnotes: true,
@@ -192,6 +191,7 @@ end
 Time.zone = 'US/Eastern'
 
 activate :blog do |blog|
+  blog.name = 'blog'
   blog.prefix = 'blog'
   # blog.permalink = ":year/:month/:day/:title.html"
   # blog.sources = ":year-:month-:day-:title.html"
@@ -207,6 +207,15 @@ activate :blog do |blog|
   blog.tag_template = 'templates/tag.html'
   blog.calendar_template = 'templates/calendar.html'
 
+  blog.paginate = true
+  blog.per_page = 10
+  blog.page_link = 'page/:num'
+end
+
+activate :blog do |blog|
+  blog.name = 'projects'
+  blog.prefix = 'projects'
+  blog.layout = 'project'
   blog.paginate = true
   blog.per_page = 10
   blog.page_link = 'page/:num'

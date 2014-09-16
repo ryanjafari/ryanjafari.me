@@ -1,4 +1,17 @@
 module CustomHelpers
+  def screens_for_project(project)
+    project_date = project.date.strftime('%Y-%m-%d')
+    folder_name = "#{project_date}-#{project.slug}"
+    [].tap do |results|
+      Dir.glob("./source/projects/#{folder_name}/*.*") do |screen|
+        path_to_image = File.join(project.url, screen.split('/').last)
+        photo = content_tag(:img, nil, src: path_to_image)
+        thumb = content_tag(:a, photo, href: '#', class: 'thumbnail')
+        results << content_tag(:div, thumb, class: 'col-xs-3')
+      end
+    end.join.html_safe
+  end
+
   def page_data
     current_page.data
   end

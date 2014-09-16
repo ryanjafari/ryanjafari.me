@@ -1,0 +1,8 @@
+---
+title: eDivv
+date: 2014-09-14 22:34 EDT
+tags: rails, erb, sass, coffeescript
+type: web application
+description: Beauty product trading platform
+---
+

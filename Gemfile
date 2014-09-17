@@ -38,5 +38,3 @@ gem 'nokogiri', '~> 1.6.1'
 # gem 'middleman-simple-thumbnailer'
 
 # gem 'middleman-thumbnailer'
-
-# gem 'middleman-spellcheck'

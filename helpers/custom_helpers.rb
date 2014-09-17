@@ -6,7 +6,11 @@ module CustomHelpers
       Dir.glob("./source/projects/#{folder_name}/*.*") do |screen|
         path_to_image = File.join(project.url, screen.split('/').last)
         photo = content_tag(:img, nil, src: path_to_image)
-        thumb = content_tag(:a, photo, href: '#', class: 'thumbnail')
+        thumb = content_tag :a,
+                            photo,
+                            href: path_to_image,
+                            class: 'thumbnail',
+                            data: { toggle: 'lightbox' }
         results << content_tag(:div, thumb, class: 'col-xs-3')
       end
     end.join.html_safe

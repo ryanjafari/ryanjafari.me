@@ -35,6 +35,9 @@ gem 'oj', '~> 2.5.4'
 
 gem 'nokogiri', '~> 1.6.1'
 
-# gem 'middleman-simple-thumbnailer'
+# needs middleman upgrade to work first
+# gem 'middleman-thumbnailer', :git => 'https://github.com/nhemsley/middleman-thumbnailer.git'
 
-# gem 'middleman-thumbnailer'
+# returning false positives:
+# https://github.com/minivan/middleman-spellcheck/issues/7
+# gem 'middleman-spellcheck'

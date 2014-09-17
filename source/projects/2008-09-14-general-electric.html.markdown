@@ -3,6 +3,6 @@ title: General Electric
 date: 2008-09-14 16:50 EDT
 tags: java, struts
 type: web application
-description: Shopping cart, print-outs for "What's your lighting style?" marketing campaign
 ---
 
+Shopping cart, print-outs for "What's your lighting style?" marketing campaign

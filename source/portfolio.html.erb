@@ -33,7 +33,7 @@ blog: 'projects'
       </div>
       <div id='collapse_<%= i %>' class='collapse'>
         <br>
-        <p><%= project.data.description %></p>
+        <%= project.body %>
         <div class='row'>
           <%= screens_for_project(project) %>
         </div>

@@ -1,5 +1,5 @@
 @import bootstrap/dist/css/bootstrap
-@import bourbon/app/assets/stylesheets/bourbon
+@import bourbon/dist/bourbon
 
 // functions and mixins
 
@@ -326,7 +326,7 @@ blockquote.pull-right
 
 blockquote:before
   @include triangle(30px, $ff7-yellow, down)
-  @include inline-block
+  display: inline-block
 
 code, pre
   @extend .ff7-form-control

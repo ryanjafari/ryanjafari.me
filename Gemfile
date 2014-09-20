@@ -17,7 +17,7 @@ gem 'redcarpet', '~> 3.0.0'
 
 gem 'middleman-syntax', '~> 2.0.0'
 
-gem 'middleman-imageoptim', '~> 0.1.4'
+# gem 'middleman-imageoptim', '~> 0.1.4'
 
 # gem 'middleman-favicon-maker', '~> 3.5.3'
 

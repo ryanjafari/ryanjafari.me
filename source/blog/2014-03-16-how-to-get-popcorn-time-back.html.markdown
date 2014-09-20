@@ -10,7 +10,7 @@ Seems like Popcorn Time is here to stay at [time4popcorn.com](http://www.time4po
 
 READMORE
 
-<s>**Update**: [YIFY](http://yify-torrents.com.come.in/), the website that Popcorn Time is based on, took over Popcorn Time and provides fully built apps on GitHub [here](https://github.com/Yify/popcorn-app/releases/tag/v0.2.7-beta), which weren't available to my knowledge at the time of this writing. I'm not sure on the legality of this, so if they ever take that down, you're back to this guide to help build it yourself :)</s>
+<s>**Update**: [YIFY](http://yify-torrents.com.come.in/), the website that Popcorn Time is based on, took over Popcorn Time and provides fully built apps on GitHub, which weren't available to my knowledge at the time of this writing. I'm not sure on the legality of this, so if they ever take that down, you're back to this guide to help build it yourself :)</s>
 
 ---
 

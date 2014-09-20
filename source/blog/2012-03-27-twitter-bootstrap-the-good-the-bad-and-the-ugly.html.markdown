@@ -19,7 +19,7 @@ Then, one day, the internet was taken by storm by developers having nerdgasms ov
 - **It's built on LESS**: we prefer SASS here at Cetrasoft (not because it's just what we know, but because we actually prefer it).
 - **General QQ'ing**: I was upset that people would rather just never learn a thing about HTML/CSS/JS and use some monolithic front-end framework to do everything for them, not bothering to take the time to learn something new by building out their own framework. I've since changed mind a bit..
 
-Then, I read this article from Baregit, a new Git repository hosting service: <s>[To Bootstrap or Not?](http://blog.baregit.com/2012/bootstrap-or-not-bootstrap)</s>. Well, it pretty much changed (almost) everything about how I looked at Twitter Bootstrap (and others) for production use. Here's why (basically a summary from the article):
+Then, I read this article from Baregit, a new Git repository hosting service: <s>To Bootstrap or Not?</s>. Well, it pretty much changed (almost) everything about how I looked at Twitter Bootstrap (and others) for production use. Here's why (basically a summary from the article):
 
 - **Easy visual consistency** between your applications and other Bootstrap applications around the web, making users comfortable with tried and true visual and interactive paradigms. In the article, the writer makes an analogy between Bootstrap and Gnome/WPF/Cocoa. The buttons, dialogs, etc. of applications under each of those frameworks look the same from application to application. I initially thought this was a bad thing, but it actually is a good thing.
 - **Tested with many browsers**. Big win here.

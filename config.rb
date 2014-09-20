@@ -165,7 +165,7 @@ activate :s3_sync do |s3_sync|
   s3_sync.after_build                = false
   s3_sync.prefer_gzip                = true
   s3_sync.path_style                 = true
-  s3_sync.reduced_redundancy_storage = false
+  s3_sync.reduced_redundancy_storage = true
   s3_sync.acl                        = 'public-read'
   s3_sync.encryption                 = false
 end

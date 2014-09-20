@@ -1,69 +1,13 @@
-## Install Instructions
+# What is this?
 
-1. Clone the repository
+The personal website, blog, and portfolio of Ryan Jafari.
 
-        git clone git@bitbucket.org:cetrasoft/cetrasoft-v3.git
-        cd cetrasoft-v3
+# What's it made of?
 
-2. Install Ruby
+[Middleman](http://middlemanapp.com/) makes static websites really boss: this entire website is generated on my local machine by Middleman from Markdown files, ERB & Slim templates, and Ruby code before being synced with Amazon S3 via the great (middleman-s3_sync)[https://github.com/fredjean/middleman-s3_sync].
 
-    Check if you have the proper version of Ruby
+This results in a simple, clean, super fast, super available, and easily maintainable yet customizable personal web presence for yours truly.
 
-        rbenv version
+And that's pretty much it.
 
-    If the proper version is not present
-
-        rbenv install 1.9.3-p392
-        rbenv rehash
-
-3. Install gems
-
-    If Bundler is not already installed
-
-        gem install bundler
-
-    Install the project gems into the local directory
-
-        bundle install --path vendor
-
-## Development Usage
-
-1. Run the preview server
-
-        bundle exec middleman
-
-2. Navigate to the site at: http://localhost:4567/
-
-## General Notes
-
-* **Slim:** all calls to helper functions must be unescaped using the '==' symbol
-
-        == link_to 'Example', 'www.example.com'
-
-## Blogging
-
-For full documentation, click [here](http://middlemanapp.com/blogging/)
-
-1. Create a new blog post
-
-        bundle exec middleman article [TITLE]
-
-    * NOTE: Be careful with punctuation in the post title when generating the blog post
-
-2. (Optional) Add a subdirectory for any assets for a particular post.
-
-    See _Article Subdirectory_ in the [documentation](http://middlemanapp.com/blogging/)
-
-## Deployment
-
-1. Compile the project into a static site
-
-        bundle exec middleman build --clean
-
-2. Sync the newly built project with Amazon S3
-
-        bundle exec middleman sync
-
-    * NOTE: Currently the sync procedure doesn't seem to be correctly marking orphaned files for deletion. If you know that you've removed a file that would have been part of a previous build, please remove it manually from the S3 bucket.
-
-3. **Commit** and **push** your Git repository (or production and dev codebases will be out of sync)
+http://ryanjafari.me/

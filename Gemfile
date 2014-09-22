@@ -7,6 +7,8 @@ gem 'slim', '~> 2.0.3'
 
 gem 'middleman-s3_sync', '~> 3.0.35'
 
+gem 'middleman-cloudfront', '~> 0.0.9'
+
 # gem 'middleman-s3_redirect', '~> 3.0.3'
 
 gem 'rack-google-analytics', '~> 1.2.0'

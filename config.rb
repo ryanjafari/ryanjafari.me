@@ -170,6 +170,14 @@ activate :s3_sync do |s3_sync|
   s3_sync.encryption                 = false
 end
 
+activate :cloudfront do |cf|
+  cf.access_key_id = APP_CONFIG['aws_access_key_id']
+  cf.secret_access_key = APP_CONFIG['aws_secret_access_key']
+  cf.distribution_id = 'E7GFGM2V8PEDL'
+  # cf.filter = /\.html$/i  # default is /.*/
+  # cf.after_build = false  # default is false
+end
+
 ###
 # Amazon S3 object-level redirection
 ###

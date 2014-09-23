@@ -4,11 +4,13 @@ module CustomHelpers
     folder_name = "#{project_date}-#{project.slug}"
     [].tap do |results|
       Dir.glob("./source/projects/#{folder_name}/*.*") do |screen|
-        path_to_image = File.join(project.url, screen.split('/').last)
-        photo = content_tag(:img, nil, src: path_to_image)
+        the_path = ['/projects', folder_name, screen.split('/').last]
+        path_to_image = File.join(the_path)
+        the_url = url_for(path_to_image)
+        photo = content_tag(:img, nil, src: the_url)
         thumb = content_tag :a,
                             photo,
-                            href: path_to_image,
+                            href: the_url,
                             class: 'thumbnail',
                             data: { toggle: 'lightbox' }
         results << content_tag(:div, thumb, class: 'col-xs-3')

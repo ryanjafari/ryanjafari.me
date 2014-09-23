@@ -194,7 +194,7 @@ activate :cloudfront do |cf|
   cf.access_key_id = APP_CONFIG['aws_access_key_id']
   cf.secret_access_key = APP_CONFIG['aws_secret_access_key']
   cf.distribution_id = 'E7GFGM2V8PEDL'
-  # cf.filter = /\.html$/i  # default is /.*/
+  cf.filter = /\.(html|xml)$/i  # default is /.*/
   # cf.after_build = false  # default is false
 end
 

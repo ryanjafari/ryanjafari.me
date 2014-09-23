@@ -179,6 +179,13 @@ activate :s3_sync do |s3_sync|
   s3_sync.encryption                 = false
 end
 
+# Set the Cache-Control Headers
+default_caching_policy max_age: (60 * 60 * 24 * 365)
+
+caching_policy 'text/html', max_age: 0, must_revalidate: true
+caching_policy 'text/plain', max_age: 0, must_revalidate: true
+caching_policy 'application/xml', max_age: 0, must_revalidate: true
+
 # Amazon S3 object-level redirection
 # activate :s3_redirect do |s3_redirect|
 #   s3_redirect.bucket                = 'ryanjafari.me'
@@ -194,7 +201,7 @@ activate :cloudfront do |cf|
   cf.access_key_id = APP_CONFIG['aws_access_key_id']
   cf.secret_access_key = APP_CONFIG['aws_secret_access_key']
   cf.distribution_id = 'E7GFGM2V8PEDL'
-  cf.filter = /\.(html|xml)$/i  # default is /.*/
+  cf.filter = /\.(html|txt|xml)$/i  # default is /.*/
   # cf.after_build = false  # default is false
 end
 

@@ -18,9 +18,9 @@ More importantly, what we *do* have as compensation is a sturdy product and a gr
 
 Take a look:
 
-<a href='css_comparison.png' data-toggle='lightbox' data-title='CSS Code Comparison'>
-    <img src='css_comparison.png' width='100%' class='img-thumbnail' />
-</a>
+<% link_to '/blog/2014-08-12-why-our-code-is-better-and-why-it-matters/css_comparison.png', data: { toggle: 'lightbox', title: 'CSS Code Comparison' } do %>
+    <%= image_tag '/blog/2014-08-12-why-our-code-is-better-and-why-it-matters/css_comparison.png', width: '100%', class: 'img-thumbnail' %>
+<% end %>
 
 You'll notice two CSS files open side by side (CSS files handle the website's visuals, by the way). On the left, a CSS file with **66** lines of code, and on the right, a CSS file with **110** lines of code.
 

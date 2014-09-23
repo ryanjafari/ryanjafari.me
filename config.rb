@@ -16,7 +16,10 @@
 page '/archive/*', directory_index: false
 
 # Disable layout and pretty URLs for sitemap
-page '/sitemap.xml', layout: false, directory_index: false
+page 'sitemap.xml', layout: false
+
+# Disable layout for RSS feed
+page 'feed.xml', layout: false
 
 # A path which all have the same layout
 # with_layout :benefits do
@@ -58,6 +61,9 @@ activate :livereload
 
 activate :syntax, css_class: 'codehilite'
 
+# Automatic image dimensions on image_tag helper
+# activate :automatic_image_sizes
+
 set :markdown_engine, :redcarpet
 set :markdown,  no_intra_emphasis: true,
                 tables: true,
@@ -97,7 +103,10 @@ configure :build do
   activate :minify_html
 
   # Enable cache buster
-  activate :cache_buster
+  # activate :cache_buster
+
+  # so there would be no need in invalidationg css-js files on cdn
+  activate :asset_hash
 
   # Use relative URLs
   activate :relative_assets
@@ -170,6 +179,17 @@ activate :s3_sync do |s3_sync|
   s3_sync.encryption                 = false
 end
 
+# Amazon S3 object-level redirection
+# activate :s3_redirect do |s3_redirect|
+#   s3_redirect.bucket                = 'ryanjafari.me'
+#   s3_redirect.region                = 'us-east-1'
+#   # s3_redirect.aws_access_key_id     = APP_CONFIG['aws_access_key_id']
+#   # s3_redirect.aws_secret_access_key = APP_CONFIG['aws_secret_access_key']
+#   s3_redirect.after_build           = true
+# end
+
+# redirect '/', 'http://ryanandcarlos.com/'
+
 activate :cloudfront do |cf|
   cf.access_key_id = APP_CONFIG['aws_access_key_id']
   cf.secret_access_key = APP_CONFIG['aws_secret_access_key']
@@ -177,20 +197,6 @@ activate :cloudfront do |cf|
   # cf.filter = /\.html$/i  # default is /.*/
   # cf.after_build = false  # default is false
 end
-
-###
-# Amazon S3 object-level redirection
-###
-
-# activate :s3_redirect do |s3_redirect|
-#   s3_redirect.bucket                = 'ryanjafari.me'
-#   s3_redirect.region                = 'us-east-1'
-#   s3_redirect.aws_access_key_id     = APP_CONFIG['aws_access_key_id']
-#   s3_redirect.aws_secret_access_key = APP_CONFIG['aws_secret_access_key']
-#   s3_redirect.after_build           = true
-# end
-
-# redirect '/', 'http://ryanandcarlos.com/'
 
 ###
 # Blog settings
@@ -232,5 +238,3 @@ end
 # folder for each .html file and place the built template file as the index
 # of that folder.
 activate :directory_indexes
-
-page 'feed.xml', layout: false

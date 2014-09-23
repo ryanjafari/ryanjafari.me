@@ -1,0 +1,12 @@
+= wrap_layout :layout do
+  .row
+    .col-sm-8
+      .article
+        .content-area (data-measure='content-area')
+          h2 = page_data.title
+          = partial 'article_meta', locals: { article: current_page.data }
+          = yield
+        = partial 'subscribe_form', locals: { klass: 'form-inline' }
+      = disqus if defined? disqus
+    .col-sm-3.col-sm-offset-1
+      = partial 'sidebar'

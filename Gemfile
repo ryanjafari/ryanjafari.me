@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # unable to upgrade
-gem 'middleman', '~> 3.2.2'
+gem 'middleman', '~> 3.3.6'
 
 gem 'slim', '~> 2.0.3'
 

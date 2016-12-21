@@ -1,41 +1,39 @@
 source 'https://rubygems.org'
 
 # unable to upgrade
-gem 'middleman', '~> 3.3.6'
+gem 'middleman'
 
-gem 'slim', '~> 2.0.3'
+gem 'slim'
 
-gem 'middleman-s3_sync', '~> 3.0.35'
+gem 'middleman-s3_sync'
 
-gem 'middleman-cloudfront', '~> 0.0.9'
+gem 'middleman-cloudfront'
 
 # gem 'middleman-s3_redirect', '~> 3.0.3'
 
-gem 'rack-google-analytics', '~> 1.2.0'
+gem 'rack-google-analytics'
 
-gem 'middleman-blog', '~> 3.5.3'
+gem 'middleman-blog'
 
-gem 'redcarpet', '~> 3.0.0'
+gem 'redcarpet'
 
-gem 'middleman-syntax', '~> 2.0.0'
+gem 'middleman-syntax'
 
 # gem 'middleman-imageoptim', '~> 0.1.4'
 
 # gem 'middleman-favicon-maker', '~> 3.5.3'
 
-gem 'middleman-minify-html', '~> 3.4.0'
+gem 'middleman-minify-html'
 
-gem 'middleman-livereload', '~> 3.3.4'
+gem 'middleman-livereload'
 
-gem 'middleman-bower', '~> 1.0.2'
+gem 'middleman-disqus'
 
-gem 'middleman-disqus', '~> 0.0.3'
+gem 'therubyracer'
 
-gem 'therubyracer', '~> 0.12.1'
+gem 'oj'
 
-gem 'oj', '~> 2.5.4'
-
-gem 'nokogiri', '~> 1.6.1'
+gem 'nokogiri'
 
 # needs middleman upgrade to work first
 # gem 'middleman-thumbnailer', :git => 'https://github.com/nhemsley/middleman-thumbnailer.git'

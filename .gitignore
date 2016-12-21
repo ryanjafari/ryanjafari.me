@@ -4,14 +4,15 @@
 # or operating system, you probably want to add a global ignore instead:
 # git config --global core.excludesfile ~/.gitignore_global
 
-# Ignore bundler config
-/.bundle
+# Ignore bundler
+.bundle
 
 # Ignore the build directory
-/build
+build
 
-# Ignore Bower assets
+# Ignore vendored
 vendor/assets/bower
+vendor/bundle
 
 # Ignore s3_sync config file
 .s3_sync

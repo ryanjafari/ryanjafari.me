@@ -85,7 +85,7 @@ set :js_dir, 'assets/javascripts'
 set :images_dir, 'assets/images'
 set :fonts_dir, 'assets/fonts'
 
-activate :bower
+sprockets.append_path File.join "#{root}", "vendor/assets/bower"
 
 set :automatic_directory_matcher, '--'
 
@@ -150,7 +150,7 @@ configure :build do
 end
 
 # This is so we can put links in markdown
-Slim::Engine.set_default_options disable_escape: true
+Slim::Engine.set_options disable_escape: true
 
 # Google Analytics
 if build?

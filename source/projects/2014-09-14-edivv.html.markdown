@@ -1,6 +1,6 @@
 ---
 title: eDivv
-date: 2014-09-14 22:34 EDT
+date: 2014-09-14
 tags: rails, erb, sass, coffeescript
 type: web application
 ---

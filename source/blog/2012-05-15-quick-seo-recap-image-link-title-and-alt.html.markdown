@@ -1,6 +1,6 @@
 ---
 title: 'Quick SEO Recap: Image, Link, Title, and Alt'
-date: 2012-05-15 11:58 -05:00
+date: 2012-05-15
 tags: seo
 ---
 

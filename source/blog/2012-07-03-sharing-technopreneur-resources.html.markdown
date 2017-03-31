@@ -1,6 +1,6 @@
 ---
 title: 'Sharing "Technopreneur" Resources'
-date: 2012-07-03 22:59 -05:00
+date: 2012-07-03
 tags: startups
 ---
 

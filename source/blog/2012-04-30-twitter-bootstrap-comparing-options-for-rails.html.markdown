@@ -1,6 +1,6 @@
 ---
 title: 'Twitter Bootstrap: Comparing Options For Rails'
-date: 2012-04-30 22:38 -05:00
+date: 2012-04-30
 tags: bootstrap-and-rails
 ---
 

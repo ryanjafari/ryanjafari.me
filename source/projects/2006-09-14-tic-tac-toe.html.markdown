@@ -1,6 +1,6 @@
 ---
 title: Tic Tac Toe
-date: 2006-09-14 16:28 EDT
+date: 2006-09-14
 tags: java, swing
 type: desktop game
 ---

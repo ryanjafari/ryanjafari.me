@@ -1,6 +1,6 @@
 ---
 title: Too many authentication failures!
-date: 2011-12-28 00:00 -05:00
+date: 2011-12-28
 tags: development
 ---
 

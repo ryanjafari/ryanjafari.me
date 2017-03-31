@@ -1,6 +1,6 @@
 ---
 title: Code quality & technical debt... why should I care?
-date: 2014-07-16 18:34 EDT
+date: 2014-07-16
 tags: consulting
 ---
 
@@ -14,7 +14,9 @@ Whether you've reached my article because you're a technologist struggling with 
 
 ### Code quality ###
 
-<%= image_tag '/blog/2014-07-16-code-quality-technical-debt-why-should-i-care/wtfs.png', width: '40%', class: 'pull-right img-left' %>
+<p>
+    <%= image_tag '/blog/2014-07-16-code-quality-technical-debt-why-should-i-care/wtfs.png', width: '40%', class: 'pull-right img-left' %>
+</p>
 
 Software quality can refer to:
 
@@ -36,7 +38,9 @@ Basically, every time we build a new feature we need to do a lot of work to supp
 
 It's kind of like that game Jenga, you know, the one with the blocks that you stack.
 
-<%= image_tag '/blog/2014-07-16-code-quality-technical-debt-why-should-i-care/jenga.jpg', width: '25%', class: 'pull-right img-rounded img-left' %>
+<p>
+    <%= image_tag '/blog/2014-07-16-code-quality-technical-debt-why-should-i-care/jenga.jpg', width: '25%', class: 'pull-right img-rounded img-left' %>
+</p>
 
 So away you go with your friends taking turns stacking one block at a time. What happens after a while? Well the point of the game is that the structure starts to become unstable, and whoever is the first player to make it fall loses.
 
@@ -93,5 +97,3 @@ As clients, you should always have a person or team you trust overseeing develop
 If you're struggling with an app you feel is burdened by poor code quality and technical debt, check out our <a href='http://ryanandcarlos.com/watchdog' target='_blank'>Website Watchdog</a> package that can sniff out your app's silent killers.
 
 <a href='http://ryanandcarlos.com/watchdog' class='btn btn-primary' target='_blank'>Learn more about Website Watchdog</a>
-
-

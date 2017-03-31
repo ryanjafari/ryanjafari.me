@@ -1,6 +1,6 @@
 ---
 title: "Thoughtbot's Playbook: Cliff Notes"
-date: 2012-04-16 02:49 -05:00
+date: 2012-04-16
 tags: startups
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Noble Insights
-date: 2010-09-14 22:41 EDT
+date: 2010-09-14
 tags: rails, haml, sass, coffeescript
 type: web application
 ---

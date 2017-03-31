@@ -1,6 +1,6 @@
 ---
 title: PC Building
-date: 2011-09-14 16:59 EDT
+date: 2011-09-14
 tags: IT
 type: hardware
 ---

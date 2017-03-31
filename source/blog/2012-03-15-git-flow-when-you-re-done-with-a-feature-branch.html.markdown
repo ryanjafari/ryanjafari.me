@@ -1,6 +1,6 @@
 ---
 title: "git flow: when you're done with a feature branch"
-date: 2012-03-15 20:05 -05:00
+date: 2012-03-15
 tags: git
 ---
 

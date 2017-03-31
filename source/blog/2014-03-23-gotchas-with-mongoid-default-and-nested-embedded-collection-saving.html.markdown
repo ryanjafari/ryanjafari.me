@@ -1,6 +1,6 @@
 ---
 title: Gotchas with Mongoid 'default' and nested, embedded collection saving
-date: 2014-03-23 17:25 EDT
+date: 2014-03-23
 tags: mongodb
 ---
 

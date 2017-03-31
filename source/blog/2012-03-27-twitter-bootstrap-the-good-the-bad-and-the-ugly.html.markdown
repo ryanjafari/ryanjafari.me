@@ -1,6 +1,6 @@
 ---
 title: 'Twitter Bootstrap: the good, the bad, and the ugly'
-date: 2012-03-27 00:30 -05:00
+date: 2012-03-27
 tags: bootstrap
 ---
 

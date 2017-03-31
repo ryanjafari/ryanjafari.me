@@ -1,6 +1,6 @@
 ---
 title: How To Get Popcorn Time Back
-date: 2014-03-16 20:01 EDT
+date: 2014-03-16
 tags: movies
 ---
 
@@ -26,7 +26,9 @@ The authors of Popcorn Time apparently had enough taking the heat, and decided t
 
 ### Goodbye Popcorn Time... Sort Of ###
 
-<%= image_tag '/blog/2014-03-16-how-to-get-popcorn-time-back/bye_popcorn_time.png', width: '35%', class: 'pull-right img-left' %>
+<p>
+    <%= image_tag '/blog/2014-03-16-how-to-get-popcorn-time-back/bye_popcorn_time.png', width: '35%', class: 'pull-right img-left' %>
+</p>
 
 Popcorn Time is open source software, so on announcement of its shutting down, an Internet's worth of software developers rushed to get app back up and running. And they were successful. Since right now it's a bit technical to get Popcorn Time up and running again, I decided to make a high-level overview guide for the very adventurous every-user to build it from the source code that's publicly available. Here goes:
 
@@ -46,7 +48,7 @@ Popcorn Time is open source software, so on announcement of its shutting down, a
 
 2. **Install node and npm**: Node and npm are pieces of software that need to be in place for you to be able to build Popcorn Time from source. Here's how it's done:
     1. Create a new, blank text file on your Desktop using TextEdit.app (Mac) (`/Applications/TextEdit.app`) or Notepad.exe (Windows). Copy and paste the following code in it:
-    
+
         ```
         echo 'export PATH=$HOME/local/bin:$PATH' >> ~/.bashrc
         . ~/.bashrc
@@ -71,7 +73,7 @@ Popcorn Time is open source software, so on announcement of its shutting down, a
     3. Download the code for Popcorn Time, [here](https://github.com/Yify/popcorn-app/archive/master.zip). If that link doesn't work anymore for whatever reason, find the "Download ZIP" button on this [page](https://github.com/Yify/popcorn-app) and click it to download the code. Put the downloaded file, `popcorn-app-master.zip`, on your Desktop.
     4. Double-click that file. It will expand its contents on your Desktop. Your terminal should still be pointed towards your Desktop (e.g. `~/Desktop`). Now type `cd popcorn-app-master` to go into the freshly expanded folder. You're almost there!
     5. Run each of these commands, pressing enter after each line:
-    
+
         ```shell
         npm install
         grunt build

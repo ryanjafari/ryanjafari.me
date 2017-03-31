@@ -1,6 +1,6 @@
 ---
 title: Bootstrap 3 Rails Tab Helper
-date: 2014-02-26 17:11 EST
+date: 2014-02-26
 tags: bootstrap-and-rails
 ---
 
@@ -128,7 +128,7 @@ So far, so good. Let's move onto talking about the stuff that generates the corr
 
 ---
 
-The way we want to think of this is that each of our two classes, `TabCollection` and `TabItem`, should know how to render themselves, and be completely oblivious to how the other is rendered. That way, when we ask our `TabCollection` what its HTML markup looks like so that we can render our tabs, it will ask each of its `TabItem`s what their HTML markup looks like. `TabItem`s will return their HTML markup to the `TabCollection`, and `TabCollection` will return all of that, plus its own stuff, to us. 
+The way we want to think of this is that each of our two classes, `TabCollection` and `TabItem`, should know how to render themselves, and be completely oblivious to how the other is rendered. That way, when we ask our `TabCollection` what its HTML markup looks like so that we can render our tabs, it will ask each of its `TabItem`s what their HTML markup looks like. `TabItem`s will return their HTML markup to the `TabCollection`, and `TabCollection` will return all of that, plus its own stuff, to us.
 
 Isn't it beautiful to leverage object-oriented programming principles when tackling real-world problems? Yes, it is.
 
@@ -202,7 +202,7 @@ module TabHelper
 
   class TabCollection
     delegate :content_tag, to: :view
-    
+
     def initialize(view, options)
       @view = view
       @tab_items = []
@@ -248,7 +248,7 @@ Onto the method that puts it all together: `render`. First, our usual HTML class
 
 `tab_content` will be a `<div>` with the appropriate Bootstrap class containing all of the tab content panes we've built up as returned by `pane_content`.
 
-Concatenate `tab_links` and `tab_content` and we've completed our `render` method. 
+Concatenate `tab_links` and `tab_content` and we've completed our `render` method.
 
 ---
 
@@ -286,7 +286,7 @@ module TabHelper
 
   class TabCollection
     delegate :content_tag, to: :view
-    
+
     def initialize(view, options)
       @view = view
       @tab_items = []

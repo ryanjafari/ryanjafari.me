@@ -1,6 +1,6 @@
 ---
 title: The secret to referencing Middleman's asset_hash-ed assets
-date: 2014-09-23 09:35 EDT
+date: 2014-09-23
 tags: ruby
 ---
 

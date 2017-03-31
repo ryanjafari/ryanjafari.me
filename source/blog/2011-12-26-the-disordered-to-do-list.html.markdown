@@ -1,6 +1,6 @@
 ---
 title: The Disordered To-Do List
-date: 2011-12-26 00:00 -05:00
+date: 2011-12-26
 tags: productivity
 ---
 

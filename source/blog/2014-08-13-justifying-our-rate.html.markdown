@@ -1,6 +1,6 @@
 ---
 title: Web development costs explained
-date: 2014-08-13 18:44 EDT
+date: 2014-08-13
 tags: consulting
 ---
 

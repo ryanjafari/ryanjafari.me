@@ -1,6 +1,6 @@
 ---
 title: Why our code is better (and why it matters)
-date: 2014-08-12 17:31 EDT
+date: 2014-08-12
 tags: css, ux-development, consulting
 ---
 
@@ -18,9 +18,11 @@ More importantly, what we *do* have as compensation is a sturdy product and a gr
 
 Take a look:
 
-<% link_to '/blog/2014-08-12-why-our-code-is-better-and-why-it-matters/css_comparison.png', data: { toggle: 'lightbox', title: 'CSS Code Comparison' } do %>
+<p>
+  <% link_to '/blog/2014-08-12-why-our-code-is-better-and-why-it-matters/css_comparison.png', data: { toggle: 'lightbox', title: 'CSS Code Comparison' } do %>
     <%= image_tag '/blog/2014-08-12-why-our-code-is-better-and-why-it-matters/css_comparison.png', width: '100%', class: 'img-thumbnail' %>
-<% end %>
+  <% end %>
+</p>
 
 You'll notice two CSS files open side by side (CSS files handle the website's visuals, by the way). On the left, a CSS file with **66** lines of code, and on the right, a CSS file with **110** lines of code.
 
@@ -41,7 +43,7 @@ But why?
 
 If your code is doing any sort of real work in the real world, like powering a business, then it will need to change, since businesses and their needs evolve over time.
 
-So then, it is easier to change 66 lines or 110 lines of code? 
+So then, it is easier to change 66 lines or 110 lines of code?
 
 You got it. Less code on the left is better, not to mention *faster* too.
 

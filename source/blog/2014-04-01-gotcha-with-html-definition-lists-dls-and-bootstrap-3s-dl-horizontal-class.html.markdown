@@ -1,6 +1,6 @@
 ---
 title: Gotcha with HTML definition lists (DLs) and Bootstrap 3's 'dl-horizontal' class
-date: 2014-04-01 22:13 EDT
+date: 2014-04-01
 tags: bootstrap-and-rails
 ---
 

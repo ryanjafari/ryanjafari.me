@@ -1,6 +1,6 @@
 ---
 title: Quoteboard
-date: 2010-09-14 22:37 EDT
+date: 2010-09-14
 tags: haml, sass, coffeescript
 type: web application
 ---

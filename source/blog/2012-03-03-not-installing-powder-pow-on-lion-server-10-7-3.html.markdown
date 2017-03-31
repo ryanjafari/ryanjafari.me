@@ -1,6 +1,6 @@
 ---
 title: (Not) Installing Powder & Pow on Lion Server 10.7.3
-date: 2012-03-03 21:20 -05:00
+date: 2012-03-03
 tags: development
 ---
 

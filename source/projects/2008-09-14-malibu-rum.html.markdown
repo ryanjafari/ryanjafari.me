@@ -1,6 +1,6 @@
 ---
 title: Malibu Rum
-date: 2008-09-14 16:48 EDT
+date: 2008-09-14
 tags: c#, asp.net
 type: web application
 ---

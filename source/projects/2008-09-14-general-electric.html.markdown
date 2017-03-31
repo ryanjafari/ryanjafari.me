@@ -1,6 +1,6 @@
 ---
 title: General Electric
-date: 2008-09-14 16:50 EDT
+date: 2008-09-14
 tags: java, struts
 type: web application
 ---

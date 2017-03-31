@@ -1,6 +1,6 @@
 ---
 title: How to include system, public, and/or third party C libraries in RubyMotion
-date: 2014-01-30 13:23 -05:00
+date: 2014-01-30
 tags: rubymotion-osx
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Chargify's Customer Support"
-date: 2012-03-27 01:35 -05:00
+date: 2012-03-27
 tags: e-commerce
 ---
 

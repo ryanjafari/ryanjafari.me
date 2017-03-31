@@ -1,6 +1,6 @@
 ---
 title: rbenv not behaving on Nitrous.io boxes
-date: 2014-04-17 23:04 EDT
+date: 2014-04-17
 tags: nitrous.io
 ---
 
@@ -19,7 +19,9 @@ READMORE
 Now if you're a fan of crappy pizza, that can buy you A LOT of crappy pizza.
 Let's see...
 
-<%= image_tag '/blog/2014-04-17-rbenv-not-behaving-on-nitrous-io-boxes/johns_favorite.jpg', width: '25%', class: 'pull-right img-rounded img-left' %>
+<p>
+    <%= image_tag '/blog/2014-04-17-rbenv-not-behaving-on-nitrous-io-boxes/johns_favorite.jpg', width: '25%', class: 'pull-right img-rounded img-left' %>
+</p>
 
 - 1x Papa John's Large Speciality Pizza = ~$15 bucks
 - 6,650,000/15 = 443,333 Large Specialty Pizzas
@@ -49,7 +51,9 @@ computers and into the cloud.*
 
 ### 'the F does this have to do with rbenv? ###
 
-<%= image_tag '/blog/2014-04-17-rbenv-not-behaving-on-nitrous-io-boxes/wtf.jpg', width: '25%', class: 'pull-right img-rounded img-left' %>
+<p>
+    <%= image_tag '/blog/2014-04-17-rbenv-not-behaving-on-nitrous-io-boxes/wtf.jpg', width: '25%', class: 'pull-right img-rounded img-left' %>
+</p>
 
 Well the general wonkiness of Nitrous.io in its fledgling days segues nicely into
 the wonkiness I was experiencing when trying to install rbenv on my box.
@@ -82,4 +86,6 @@ unset GEM_PATH
 ```
 Now for some pizza. I just ordered a medium Pepperoni.
 
-<%= image_tag '/blog/2014-04-17-rbenv-not-behaving-on-nitrous-io-boxes/pepperoni.jpg', width: '25%', class: 'img-rounded' %>
+<p>
+    <%= image_tag '/blog/2014-04-17-rbenv-not-behaving-on-nitrous-io-boxes/pepperoni.jpg', width: '25%', class: 'img-rounded' %>
+</p>

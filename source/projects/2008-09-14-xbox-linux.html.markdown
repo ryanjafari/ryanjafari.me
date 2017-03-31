@@ -1,6 +1,6 @@
 ---
 title: Xbox Linux
-date: 2008-09-14 16:39 EDT
+date: 2008-09-14
 tags: soldering, unix
 type: fun
 ---

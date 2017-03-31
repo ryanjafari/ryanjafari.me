@@ -1,6 +1,6 @@
 ---
 title: Find Car Love
-date: 2010-09-14 22:38 EDT
+date: 2010-09-14
 tags: rails, slim, sass, coffeescript
 type: web application
 ---

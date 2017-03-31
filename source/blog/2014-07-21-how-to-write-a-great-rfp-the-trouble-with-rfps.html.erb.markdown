@@ -1,6 +1,6 @@
 ---
 title: How to write a great RFP (the trouble with RFPs)
-date: 2014-07-21 19:54 EDT
+date: 2014-07-21
 tags: consulting
 ---
 
@@ -8,7 +8,9 @@ So many development firms to choose from and so little time. You've decided to w
 
 READMORE
 
-<%= image_tag '/blog/2014-07-21-how-to-write-a-great-rfp-the-trouble-with-rfps/rfp.jpg', width: '40%', class: 'pull-right img-left' %>
+<p>
+    <%= image_tag '/blog/2014-07-21-how-to-write-a-great-rfp-the-trouble-with-rfps/rfp.jpg', width: '40%', class: 'pull-right img-left' %>
+</p>
 
 You've come here looking for help on writing a great RFP; probably searching for an outline for a good solid foundation. Great. The problem is that you're probably not as equipped as you think you are to start writing one.
 
@@ -36,7 +38,7 @@ Many times our clients come to us and say something like: "...and I want it to s
 
 With your RFP, invariably, you'll be tempted to load up your functional spec up with technical requirements and you won't even know you're doing it.  You'll say stuff like: "it needs to send a text message", "it should be accessible on our company servers", and "it should be built on WordPress". Word-for-word, all things that could be very difficult and expensive to do compared with other easier and cheaper alternatives. It's hard to keep the technical language totally separate, especially if you don't do this for a living.
 
-You really should leave these tech. decisions to an expert. Someone who can constantly orient you in the right direction, to change your functional requirements to what you really meant, sans any technology implications: "it needs to notify me", "it should be accessible to everyone on my team", and "it should be built on something cheap, ubiquitous, and easily maintainable." 
+You really should leave these tech. decisions to an expert. Someone who can constantly orient you in the right direction, to change your functional requirements to what you really meant, sans any technology implications: "it needs to notify me", "it should be accessible to everyone on my team", and "it should be built on something cheap, ubiquitous, and easily maintainable."
 
 With the RFP, you'll blast your flawed functional spec out to a bunch of vendors who will be tempted to quote you on exactly what you've told them in a mad dash to win your business. The time hasn't been taken to be able to do anything else: to help you think things through a bit more to explore other options. It's just a bad setup.
 

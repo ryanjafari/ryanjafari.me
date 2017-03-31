@@ -1,6 +1,6 @@
 ---
 title: Tripwing
-date: 2014-09-14 17:06 EDT
+date: 2014-09-14
 tags: rails, slim, sass, coffeescript, bootstrap
 type: web application
 ---

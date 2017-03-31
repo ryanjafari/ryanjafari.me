@@ -16,3 +16,12 @@ vendor/bundle
 
 # Ignore s3_sync config file
 .s3_sync
+
+# Ignore bower config
+.bowerrc
+
+# Ignore Sass cache
+.sass-cache
+
+# Ignore environment variables
+.env

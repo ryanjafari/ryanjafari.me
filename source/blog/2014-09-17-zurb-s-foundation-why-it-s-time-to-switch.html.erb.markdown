@@ -1,6 +1,6 @@
 ---
 title: 'Showdown: Foundation vs. Bootstrap'
-date: 2014-09-17 16:00 EDT
+date: 2014-09-17
 tags: bootstrap, foundation
 ---
 
@@ -102,7 +102,9 @@ Of course there are JS libraries that handle this for you, but it's nice to have
 
 #### Off-canvas
 
-<%= image_tag '/blog/2014-09-17-zurb-s-foundation-why-it-s-time-to-switch/uber_nav.png', class: 'img-thumbnail img-left pull-right', width: '25%' %>
+<p>
+  <%= image_tag '/blog/2014-09-17-zurb-s-foundation-why-it-s-time-to-switch/uber_nav.png', class: 'img-thumbnail img-left pull-right', width: '25%' %>
+</p>
 
 If there's one thing I learned over my 4+ years consulting, it's that clients love off-canvas menus. Ok maybe I learned a lot more important things than that, but I used to */facepalm* every time a client would mention it. You know how many times I've heard: "hey, do you know that slide out thing on Uber?" Listen, we can spend a month making you a custom off-canvas menu solution, find some wonky jQuery plug-in to work with, or we can just give you a standard "on-canvas" navigation menu.
 

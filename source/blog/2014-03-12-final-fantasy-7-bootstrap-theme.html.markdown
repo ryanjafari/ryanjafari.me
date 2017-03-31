@@ -1,6 +1,6 @@
 ---
 title: Final Fantasy 7 Bootstrap Theme
-date: 2014-03-12 18:38 EDT
+date: 2014-03-12
 tags: bootstrap-themes
 ---
 

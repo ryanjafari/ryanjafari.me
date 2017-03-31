@@ -1,17 +1,3 @@
-###
-# Page options, layouts, aliases and proxies
-###
-
-# Per-page layout changes:
-#
-# With no layout
-# page "/path/to/file.html", :layout => false
-#
-# With alternative layout
-# page '/goals/*', layout: :goals
-# page '/case_studies/*', layout: :case_studies
-# page '/company/*', layout: :company
-
 # Disable pretty URLs for blog archive
 page '/archive/*', directory_index: false
 
@@ -21,48 +7,14 @@ page 'sitemap.xml', layout: false
 # Disable layout for RSS feed
 page 'feed.xml', layout: false
 
-# A path which all have the same layout
-# with_layout :benefits do
-#   page "/benefits/*"
-# end
+activate :automatic_image_sizes
 
-# Proxy (fake) files
-# page "/this-page-has-no-template.html", :proxy => "/template-file.html" do
-#   @which_fake_page = "Rendering a fake page with a variable"
-# end
-
-###
-# Helpers
-###
-
-# Automatic image dimensions on image_tag helper
-# activate :automatic_image_sizes
-
-# Methods defined in the helpers block are available in templates
-# helpers do
-#
-# end
-
-###
-# Application Config
-###
-
-if File.exist?('.s3_sync')
-  APP_CONFIG = YAML.load_file('.s3_sync')
-else
-  puts "WARNING: could not find an '.s3_sync' file in the root
-        directory. You will not be able to deploy properly without one."
-  APP_CONFIG = {}
-end
-
-require 'slim'
+# This is so we can put links in markdown
+Slim::Engine.set_options disable_escape: true
 
 activate :livereload
 
 activate :syntax, css_class: 'codehilite'
-
-# Automatic image dimensions on image_tag helper
-# activate :automatic_image_sizes
 
 set :markdown_engine, :redcarpet
 set :markdown,  no_intra_emphasis: true,
@@ -83,131 +35,42 @@ set :markdown,  no_intra_emphasis: true,
 set :css_dir, 'assets/stylesheets'
 set :js_dir, 'assets/javascripts'
 set :images_dir, 'assets/images'
-set :fonts_dir, 'assets/fonts'
 
-sprockets.append_path File.join "#{root}", "vendor/assets/bower"
+activate :sprockets
+
+after_configuration do
+  @bower_config = JSON.parse IO.read("#{root}/.bowerrc")
+  sprockets.append_path File.join(root, @bower_config["directory"])
+end
 
 set :automatic_directory_matcher, '--'
 
 set :relative_links, true
 
-# Build-specific configuration
 configure :build do
-  # For example, change the Compass output style for deployment
   activate :minify_css
-
-  # Minify Javascript on build
   activate :minify_javascript
-
-  # Minify HTML on build
   activate :minify_html
-
-  # Enable cache buster
-  # activate :cache_buster
-
-  # so there would be no need in invalidationg css-js files on cdn
+  # activate :cache_buster # Old method; for backup
   activate :asset_hash
-
-  # Use relative URLs
   activate :relative_assets
-
-  # Middleman can produce gripped versions of your HTML, CSS, and JavaScript
-  activate :gzip
-
-  # Compress images after build
-  # TODO: are we using svgo & pngout? check output
-  # activate :imageoptim do |imageoptim|
-  #   imageoptim.verbose = true
-  # end
-
-  # Or use a different image path
-  # set :http_path, "/Content/images/"
-
-  # activate :favicon_maker do |f|
-  #   f.template_dir  = File.join(root, 'source/assets/images')
-  #   f.icons = {
-  #     'favicon_template.png' => [
-  #       { icon: 'apple-touch-icon-152x152-precomposed.png' },
-  #       { icon: 'apple-touch-icon-144x144-precomposed.png' },
-  #       { icon: 'apple-touch-icon-120x120-precomposed.png' },
-  #       { icon: 'apple-touch-icon-114x114-precomposed.png' },
-  #       { icon: 'apple-touch-icon-76x76-precomposed.png' },
-  #       { icon: 'apple-touch-icon-72x72-precomposed.png' },
-  #       { icon: 'apple-touch-icon-60x60-precomposed.png' },
-  #       { icon: 'apple-touch-icon-57x57-precomposed.png' },
-  #       { icon: 'apple-touch-icon-precomposed.png', size: '57x57' },
-  #       { icon: 'favicon-196x196.png' },
-  #       { icon: 'favicon-160x160.png' },
-  #       { icon: 'favicon-96x96.png' },
-  #       { icon: 'favicon-32x32.png' },
-  #       { icon: 'favicon-16x16.png' },
-  #       { icon: 'favicon.png', size: '16x16' },
-  #       { icon: 'favicon.ico', size: '64x64,32x32,24x24,16x16' },
-  #       { icon: 'mstile-144x144', format: 'png' }
-  #     ]
-  #   }
-  # end
+  activate :imageoptim
 end
 
-# This is so we can put links in markdown
-Slim::Engine.set_options disable_escape: true
+activate :google_analytics do |ga|
+  ga.tracking_id = 'UA-48873113-1'
+  ga.domain_name = 'ryanjafari.me'
+  ga.enhanced_link_attribution = true
+  ga.debug = true
+  ga.disable = false
+  ga.test = true
+end
 
-# Google Analytics
 if build?
-  use Rack::GoogleAnalytics,
-      tracker: 'UA-48873113-1',
-      multiple: true,
-      domain: 'ryanjafari.me',
-      enhanced_link_attribution: true
-
-  # Activate Disqus extension
   activate :disqus do |d|
     d.shortname = 'ryanjafari'
   end
 end
-
-# Deployment to Amazon S3
-activate :s3_sync do |s3_sync|
-  s3_sync.bucket                     = 'ryanjafari.me'
-  s3_sync.region                     = 'us-east-1'
-  s3_sync.delete                     = true
-  s3_sync.after_build                = false
-  s3_sync.prefer_gzip                = true
-  s3_sync.path_style                 = true
-  s3_sync.reduced_redundancy_storage = true
-  s3_sync.acl                        = 'public-read'
-  s3_sync.encryption                 = false
-end
-
-# Set the Cache-Control Headers
-default_caching_policy max_age: (60 * 60 * 24 * 365)
-
-caching_policy 'text/html', max_age: 0, must_revalidate: true
-caching_policy 'text/plain', max_age: 0, must_revalidate: true
-caching_policy 'application/xml', max_age: 0, must_revalidate: true
-
-# Amazon S3 object-level redirection
-# activate :s3_redirect do |s3_redirect|
-#   s3_redirect.bucket                = 'ryanjafari.me'
-#   s3_redirect.region                = 'us-east-1'
-#   # s3_redirect.aws_access_key_id     = APP_CONFIG['aws_access_key_id']
-#   # s3_redirect.aws_secret_access_key = APP_CONFIG['aws_secret_access_key']
-#   s3_redirect.after_build           = true
-# end
-
-# redirect '/', 'http://ryanandcarlos.com/'
-
-activate :cloudfront do |cf|
-  cf.access_key_id = APP_CONFIG['aws_access_key_id']
-  cf.secret_access_key = APP_CONFIG['aws_secret_access_key']
-  cf.distribution_id = 'E7GFGM2V8PEDL'
-  cf.filter = /\.(html|txt|xml)$/i  # default is /.*/
-  # cf.after_build = false  # default is false
-end
-
-###
-# Blog settings
-###
 
 Time.zone = 'US/Eastern'
 
@@ -223,11 +86,9 @@ activate :blog do |blog|
   blog.year_link = '/calendar/:year.html'
   blog.month_link = '/calendar/:year/:month.html'
   blog.day_link = '/calendar/:year/:month/:day.html'
-  # blog.default_extension = ".markdown"
-
+  blog.default_extension = ".markdown"
   blog.tag_template = 'templates/tag.html'
   blog.calendar_template = 'templates/calendar.html'
-
   blog.paginate = true
   blog.per_page = 10
   blog.page_link = 'page/:num'

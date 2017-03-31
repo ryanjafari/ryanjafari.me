@@ -1,6 +1,6 @@
 ---
 title: highlight.js
-date: 2012-03-03 21:04 -05:00
+date: 2012-03-03
 tags: development
 ---
 

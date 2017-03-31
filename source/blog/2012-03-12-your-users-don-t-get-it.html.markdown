@@ -1,6 +1,6 @@
 ---
 title: Your Users Don't "Get It"
-date: 2012-03-12 17:30 -05:00
+date: 2012-03-12
 tags: startups
 ---
 

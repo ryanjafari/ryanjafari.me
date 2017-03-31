@@ -1,6 +1,6 @@
 ---
 title: Sleepwalker
-date: 2008-09-14 16:41 EDT
+date: 2008-09-14
 tags: assembler
 type: DOS game
 ---

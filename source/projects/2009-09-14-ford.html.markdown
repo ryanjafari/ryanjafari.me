@@ -1,6 +1,6 @@
 ---
 title: Ford
-date: 2009-09-14 16:51 EDT
+date: 2009-09-14
 tags: java, struts, smartfox
 type: online multiplayer game
 ---

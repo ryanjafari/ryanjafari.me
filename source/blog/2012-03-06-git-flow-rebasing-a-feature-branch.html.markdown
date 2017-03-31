@@ -1,6 +1,6 @@
 ---
 title: "git flow: rebasing a feature branch"
-date: 2012-03-06 18:57 -05:00
+date: 2012-03-06
 tags: git
 ---
 

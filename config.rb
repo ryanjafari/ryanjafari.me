@@ -54,7 +54,7 @@ configure :build do
   # activate :cache_buster # Old method; for backup
   activate :asset_hash
   activate :relative_assets
-  activate :imageoptim
+  activate :imageoptim # https://github.com/plasticine/middleman-imageoptim/issues/49
 end
 
 activate :google_analytics do |ga|

@@ -7,7 +7,7 @@ page 'sitemap.xml', layout: false
 # Disable layout for RSS feed
 page 'feed.xml', layout: false
 
-activate :automatic_image_sizes
+# activate :automatic_image_sizes # Doesn't seem like this works
 
 # This is so we can put links in markdown
 Slim::Engine.set_options disable_escape: true

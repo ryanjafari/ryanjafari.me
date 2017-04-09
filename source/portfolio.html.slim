@@ -1,0 +1,16 @@
+---
+pageable: true
+title: "Ryan's portfolio of work"
+descr: "Some things I've done over the years for work, university, and fun"
+blog: 'projects'
+---
+
+.row
+  .col-sm-8
+    = partial 'articles'
+
+  .col-sm-3.col-sm-offset-1
+    = partial 'sidebar/avatar'
+    = partial 'subscribe_form', locals: { klass: nil }
+    <hr>
+    = partial 'sidebar/tags'

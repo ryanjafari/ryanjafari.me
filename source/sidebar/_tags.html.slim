@@ -1,0 +1,4 @@
+h3.h4 Tags
+ul.list-unstyled
+  - blog.tags.each do |tag, articles|
+    li= link_to "#{tag} (#{articles.size})", tag_path(tag)

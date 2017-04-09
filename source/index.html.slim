@@ -8,26 +8,7 @@ blog: 'blog'
 
 .row
   .col-sm-8
-    - page_articles.each do |article|
-      .article
-        h2 = article.title
-        = partial 'article_meta', locals: { article: article }
-        = article.summary
-        p = link_to 'read more...', article.url
-
-    / adapted from http://www.slevenbits.com/blog/2013/01/middleman-blog-pagination.html
-    / pagination code can't be put into a partial because the 'prev_page' & 'next_page' won't be available in that context
-    ul.pager
-      li class="previous #{prev_page ? '' : 'disabled'}"
-        - if prev_page
-          = link_to '&larr; Newer', prev_page.url
-        - else
-          span &larr; Newer
-      li class="next #{next_page ? '' : 'disabled'}"
-        - if next_page
-          = link_to 'Older &rarr;', next_page.url
-        - else
-          span Older &rarr;
+    = partial 'articles'
 
   .col-sm-3.col-sm-offset-1
-    = partial 'sidebar'
+    = partial 'sidebar/sidebar'

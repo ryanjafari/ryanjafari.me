@@ -1,0 +1,4 @@
+p.text-muted
+  => Time.zone.parse(item.date.to_s).strftime('%B %e, %Y')
+  - unless item.tags.blank?
+    | in #{tag_links_for item.tags}

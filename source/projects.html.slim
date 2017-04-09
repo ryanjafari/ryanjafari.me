@@ -7,10 +7,7 @@ blog: 'projects'
 
 .row
   .col-sm-8
-    = partial 'articles'
+    = partial 'items'
 
   .col-sm-3.col-sm-offset-1
-    = partial 'sidebar/avatar'
-    = partial 'subscribe_form', locals: { klass: nil }
-    <hr>
-    = partial 'sidebar/tags'
+    = partial 'sidebars/project_sidebar'

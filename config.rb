@@ -97,11 +97,10 @@ end
 activate :blog do |blog|
   blog.name = 'projects'
   blog.prefix = 'projects'
-  blog.layout = 'article'
   # blog.permalink = ":year/:month/:day/:title.html"
   # blog.sources = ":year-:month-:day-:title.html"
   # blog.taglink = "tags/:tag.html"
-  blog.layout = 'article'
+  blog.layout = 'project'
   # blog.summary_separator = /(READMORE)/
   # blog.summary_length = 250
   blog.year_link = '/calendar/:year.html'

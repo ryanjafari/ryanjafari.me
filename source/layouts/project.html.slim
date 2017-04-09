@@ -6,7 +6,6 @@
           h2 = page_data.title
           = partial 'item_meta', locals: { item: current_page.data }
           = yield
-        = partial 'subscribe_form', locals: { klass: 'form-inline' }
       = disqus if defined? disqus
     .col-sm-3.col-sm-offset-1
-      = partial 'sidebars/article_sidebar'
+      = partial 'sidebars/project_sidebar'

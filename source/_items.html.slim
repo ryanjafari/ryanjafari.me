@@ -1,9 +1,9 @@
-- page_articles.each do |article|
-  .article
-    h2 = article.title
-    = partial 'article_meta', locals: { article: article }
-    = article.summary
-    p = link_to 'read more...', article.url
+- page_articles.each do |item|
+  .item
+    h2 = item.title
+    = partial 'item_meta', locals: { item: item }
+    = item.summary
+    p = link_to 'read more...', item.url
 
 / adapted from http://www.slevenbits.com/blog/2013/01/middleman-blog-pagination.html
 / pagination code can't be put into a partial because the 'prev_page' & 'next_page' won't be available in that context

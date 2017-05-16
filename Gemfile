@@ -6,7 +6,7 @@ gem 'builder', '~> 3.2.3'
 
 gem 'middleman', '~> 4.2.1'
 
-gem 'slim', '~> 3.0.7'
+gem 'slim', '~> 3.0.8'
 
 gem 's3_website', '~> 3.1.0'
 
@@ -34,7 +34,7 @@ gem 'therubyracer', '~> 0.12.3'
 
 gem 'oj', '~> 2.18.5'
 
-gem 'nokogiri', '~> 1.7.1'
+gem 'nokogiri', '~> 1.7.2'
 
 # needs middleman upgrade to work first
 # gem 'middleman-thumbnailer', :git => 'https://github.com/nhemsley/middleman-thumbnailer.git'

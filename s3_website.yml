@@ -51,8 +51,18 @@ cloudfront_wildcard_invalidation: true
 # concurrency_level: 5
 
 redirects:
-  portfolio.html: /projects
-  blog.html: /blog
+  portfolio: /projects
+  blog/index.html: /
+  blog: /
+
+routing_rules:
+  - condition:
+      key_prefix_equals: portfolio/
+    redirect:
+      protocol: http
+      host_name: <%= ENV['REDIRECT_DOMAIN_NAME'] %>
+      replace_key_prefix_with: projects/
+      http_redirect_code: 301
 
 # routing_rules:
 #   - condition:

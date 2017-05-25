@@ -1,6 +1,6 @@
 ---
 title: "Ryan's Story"
-descr: "A brief history of me and my learnings"
+descr: "A history of me and my learnings"
 ---
 
 # Ryan's Story
@@ -19,7 +19,7 @@ Ryan's experience ranges from working with household brands, venture-backed star
 
 He holds a degree in Computer Science from New York University's Courant Institute of Mathematical Sciences. There he specialized in Computer Graphics, Game Design, Unix, and Database Systems.
 
-In his spare time, Ryan eats food, plays video games, goes to the gym, tinkers with hardware, watches horror movies, and spends time with his girlfriend of 13 years, Danielle. He's also an aspiring game developer and world traveler.
+In his spare time Ryan enjoys good food, plays video games, goes to the gym, tinkers with hardware, watches horror movies, and spends time with his high school sweetheart. He's also an aspiring game developer and world traveler. He is fascinated by the future and ponders machine learning, robotics, brain-computer interfaces, space travel, and intelligent life and their effects on life as we know it.
 
 ---
 
@@ -29,12 +29,15 @@ Some highlights of his learning experience throughout the years that have inform
 
 ### Technical
 
-* Focus being able to adapt to any hot new framework (if necessary), over being wed to any single one.
+* [Focus being able to adapt to any hot new framework (if necessary), over being wed to any single one.](/blog/2014/09/17/zurb-s-foundation-why-it-s-time-to-switch/)
 * Employ a tidy git workflow and commit history policy to avoid sticky version control snafus.
-* Value code quality and pay down technical debt *(hint: it's about money).*
+* [Value code quality and pay down technical debt *(hint: it's about money).*](/blog/2014/07/16/code-quality-technical-debt-why-should-i-care/)
 * Test your code: we don't need to test every single little thing, but we do need to test the right things.
 * Choose the right tools for the right reasons. Try new things, but look before you leap.
 * Respect constraint as a catalyst for innovation.
+* [Interviewing candidates: test for talent, not for knowledge.](/blog/2016/03/07/how-i-found-myself-as-a-professional-in-the-software-technology-industry#interview)
+* Hire the best: have a hiring philosophy that dictates your execution.
+* Tech interviews are hard to administer (and take).
 
 ### Personal
 
@@ -44,6 +47,7 @@ Some highlights of his learning experience throughout the years that have inform
 * Take care of yourself: eat well and exercise.
 * Sometimes your worst enemy is you.
 * Patience is a virtue.
+* Reflect on your biases, but first you have to know that they are biases.
 
 ### Teamwork
 

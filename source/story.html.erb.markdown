@@ -25,7 +25,7 @@ In his spare time Ryan enjoys good food, plays video games, goes to the gym, tin
 
 ## What I've Learned So Far
 
-Some highlights of his learning experience throughout the years that have informed his philosophy (some of which he has written about, since these know-it-all one-liners can be loaded). As always, a work in-progress!
+Some highlights of his learning experience throughout the years that have informed his philosophy (some of which he has written about). He is by no means an expert in all of these things. As always, a work in-progress!
 
 ### Technical
 
@@ -41,7 +41,7 @@ Some highlights of his learning experience throughout the years that have inform
 
 ### Personal
 
-* Remember that if you're putting yourself outside your comfort zone, you're an imposter. And it's a good thing.
+* [Remember that if you're putting yourself outside your comfort zone, you're an imposter. And it's a good thing.](/blog/2016/03/07/how-i-found-myself-as-a-professional-in-the-software-technology-industry)
 * Failure is information: it helps us understand how to do better.
 * Keep calm and carry on.
 * Take care of yourself: eat well and exercise.
@@ -68,6 +68,7 @@ Some highlights of his learning experience throughout the years that have inform
 * Working with code is hard, working with people is harder. Getting better at the latter helps with the former.
 * Everyone you will ever meet knows something that you don't.
 * Force your team to negotiate their own conflicts: don't stick yourself in the middle.
+* Being a leader often means putting your feelings aside: "grinning-and-bearing" it for the greater good.
 
 ### Product
 

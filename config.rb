@@ -47,14 +47,18 @@ set :automatic_directory_matcher, '--'
 
 set :relative_links, true
 
+DISABLE_IMAGEOPTIM = ENV['DISABLE_IMAGEOPTIM'] || false
+CF_ASSET_HOST = ENV['CF_HOST']
+
 configure :build do
   activate :minify_css
   activate :minify_javascript
   activate :minify_html
+  # https://github.com/plasticine/middleman-imageoptim/issues/49
+  activate :imageoptim unless DISABLE_IMAGEOPTIM
   # activate :cache_buster # Old method; for backup
   activate :asset_hash
-  activate :relative_assets
-  activate :imageoptim # https://github.com/plasticine/middleman-imageoptim/issues/49
+  activate :asset_host, host: "//#{CF_ASSET_HOST}"
 end
 
 activate :google_analytics do |ga|

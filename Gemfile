@@ -1,7 +1,5 @@
 source 'https://rubygems.org'
 
-gem 'dotenv', '~> 1.0.2'
-
 gem 'builder', '~> 3.2.3'
 
 gem 'middleman', '~> 4.2.1'

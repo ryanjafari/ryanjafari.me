@@ -57,7 +57,6 @@ configure :build do
   activate :imageoptim unless DISABLE_IMAGEOPTIM
   # activate :cache_buster # Old method; for backup
   activate :asset_hash
-  activate :relative_assets
 end
 
 activate :google_analytics do |ga|

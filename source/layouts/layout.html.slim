@@ -40,10 +40,10 @@ html (lang='en')
       = yield_content :stylesheets
     - else
       = stylesheet_link_tag 'all'
+    = google_analytics_tag
 
   body
     = partial 'navbar'
     .container
       = yield
     = javascript_include_tag  'all'
-    = google_analytics_tag

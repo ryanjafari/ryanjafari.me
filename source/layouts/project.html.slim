@@ -6,6 +6,6 @@
           h2 = page_data.title
           = partial 'item_meta', locals: { item: current_page.data }
           = yield
-      = disqus if defined? disqus
+      /= disqus if defined? disqus
     .col-sm-3.col-sm-offset-1
       = partial 'sidebars/project_sidebar'

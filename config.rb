@@ -48,7 +48,6 @@ set :automatic_directory_matcher, '--'
 set :relative_links, true
 
 DISABLE_IMAGEOPTIM = ENV['DISABLE_IMAGEOPTIM'] || false
-CF_ASSET_HOST = ENV['CF_HOST']
 
 configure :build do
   activate :minify_css
@@ -58,16 +57,15 @@ configure :build do
   activate :imageoptim unless DISABLE_IMAGEOPTIM
   # activate :cache_buster # Old method; for backup
   activate :asset_hash
-  activate :asset_host, host: "//#{CF_ASSET_HOST}"
+  activate :relative_assets
 end
 
 activate :google_analytics do |ga|
   ga.tracking_id = 'UA-48873113-1'
   ga.domain_name = 'ryanjafari.me'
   ga.enhanced_link_attribution = true
-  ga.debug = true
-  ga.disable = false
-  ga.test = true
+  ga.debug = build? ? false : true
+  ga.test = build? ? false : true
 end
 
 if build?

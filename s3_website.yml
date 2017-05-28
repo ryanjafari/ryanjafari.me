@@ -40,9 +40,10 @@ cloudfront_distribution_id: <%= ENV['CF_DIST_ID'] %>
 #   default_cache_behavior:
 #     min_ttl: <%= 60 * 60 * 24 %>
 #   aliases:
-#     quantity: 1
+#     quantity: 2
 #     items:
-#       - your.website.com
+#       - www.ryanjafari.me
+#       - ryanjafari.me
 
 cloudfront_invalidate_root: true
 
@@ -59,8 +60,8 @@ routing_rules:
   - condition:
       key_prefix_equals: portfolio/
     redirect:
-      protocol: http
-      host_name: <%= ENV['REDIRECT_DOMAIN_NAME'] %>
+      protocol: https
+      host_name: ryanjafari.me
       replace_key_prefix_with: projects/
       http_redirect_code: 301
 

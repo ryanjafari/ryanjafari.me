@@ -12,7 +12,7 @@ gem 'mime-types', '~> 3.1'
 
 gem 'middleman-google-analytics', '~> 3.0.0'
 
-gem 'middleman-blog', '~> 4.0.1'
+gem "middleman-blog", git: "https://github.com/middleman/middleman-blog.git", branch: "master"
 
 gem 'redcarpet', '~> 3.4.0'
 

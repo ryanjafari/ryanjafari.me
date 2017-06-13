@@ -1,4 +1,14 @@
 GIT
+  remote: https://github.com/middleman/middleman-blog.git
+  revision: e495bbebfac3d10b3093b9b4e6a9fb30f4e735d3
+  branch: master
+  specs:
+    middleman-blog (4.0.2)
+      addressable (~> 2.3)
+      middleman-core (>= 4.0.0)
+      tzinfo (>= 0.3.0)
+
+GIT
   remote: https://github.com/plasticine/middleman-imageoptim.git
   revision: feae9a7635b4eb6b4f9d0750eb5a31191034cc58
   branch: master
@@ -89,10 +99,6 @@ GEM
       middleman-cli (= 4.2.1)
       middleman-core (= 4.2.1)
       sass (>= 3.4.0, < 4.0)
-    middleman-blog (4.0.1)
-      addressable (~> 2.3)
-      middleman-core (>= 4.0.0)
-      tzinfo (>= 0.3.0)
     middleman-cli (4.2.1)
       thor (>= 0.17.0, < 2.0)
     middleman-core (4.2.1)
@@ -195,7 +201,7 @@ PLATFORMS
 DEPENDENCIES
   builder (~> 3.2.3)
   middleman (~> 4.2.1)
-  middleman-blog (~> 4.0.1)
+  middleman-blog!
   middleman-disqus (~> 1.2.0)
   middleman-google-analytics (~> 3.0.0)
   middleman-imageoptim!

@@ -2,7 +2,6 @@
 title: NYU CESS
 date: 2007-09-14
 tags: java, wicket, html, css
-type: web application
 ---
 
 Experiment participant recruitment software

@@ -2,7 +2,10 @@
 title: eDivv
 date: 2014-09-14
 tags: rails, erb, sass, coffeescript
-type: web application
 ---
 
 Beauty product trading platform
+
+<div class='row'>
+  <%= screens_for_project(current_page) %>
+</div>

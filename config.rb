@@ -1,3 +1,5 @@
+Bundler.require :default, (build? ? "" : "development")
+
 # Disable pretty URLs for blog archive
 page '/archive/*', directory_index: false
 
@@ -45,7 +47,7 @@ end
 
 set :automatic_directory_matcher, '--'
 
-set :relative_links, true
+set :relative_links, false
 
 DISABLE_IMAGEOPTIM = ENV['DISABLE_IMAGEOPTIM'] || false
 

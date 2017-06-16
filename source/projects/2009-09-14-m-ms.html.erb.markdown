@@ -1,0 +1,11 @@
+---
+title: M&Ms
+date: 2009-09-14
+tags: c#, asp.net
+---
+
+Server-side development for an "easter egg hunt" in specially-marked packages of M&Ms in Canada
+
+<div class='row'>
+  <%= screens_for_project(current_page) %>
+</div>

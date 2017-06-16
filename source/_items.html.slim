@@ -4,6 +4,7 @@
     = partial 'item_meta', locals: { item: item }
     = item.summary
     p = link_to 'read more...', item.url
+  hr.divider
 
 / adapted from http://www.slevenbits.com/blog/2013/01/middleman-blog-pagination.html
 / pagination code can't be put into a partial because the 'prev_page' & 'next_page' won't be available in that context

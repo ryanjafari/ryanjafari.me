@@ -2,7 +2,10 @@
 title: Statisfy
 date: 2012-09-14
 tags: rails, slim, sass, coffeescript, boostrap
-type: web application
 ---
 
 Tool to help freelancers automatically update their clients on development progress via Git integration
+
+<div class='row'>
+  <%= screens_for_project(current_page) %>
+</div>

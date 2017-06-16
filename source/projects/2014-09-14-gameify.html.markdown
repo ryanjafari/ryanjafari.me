@@ -1,8 +1,7 @@
 ---
 title: Gameify
-date: 2014-09-15
+date: 2014-09-14
 tags: rails, erb, polymer, node-webkit
-type: desktop/web application
 ---
 
 Spotify for video game music

@@ -40,3 +40,8 @@ gem 'nokogiri', '~> 1.7.2'
 # returning false positives:
 # https://github.com/minivan/middleman-spellcheck/issues/7
 # gem 'middleman-spellcheck'
+
+group :development do
+  gem 'pry', '~> 0.10.4'
+  gem 'pry-nav', '~> 0.2.4'
+end

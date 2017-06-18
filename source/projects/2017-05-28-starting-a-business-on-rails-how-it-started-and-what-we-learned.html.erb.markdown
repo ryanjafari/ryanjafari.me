@@ -88,22 +88,22 @@ Ryan & Carlos took us to some fun places and introduced us to loads of tremendou
 <div class="row">
   <div class="col-sm-4">
     <p>
-      <% link_to 'ryan_carlos.jpg', data: { toggle: 'lightbox', title: 'Ryan &amp; Carlos at Client Party' } do %>
-        <%= image_tag 'ryan_carlos.jpg', class: 'img-thumbnail' %>
+      <% link_to '/projects/2017-05-28-starting-a-business-on-rails-how-it-started-and-what-we-learned/ryan_carlos.jpg', data: { toggle: 'lightbox', title: 'Ryan &amp; Carlos at Client Party' } do %>
+        <%= image_tag '/projects/2017-05-28-starting-a-business-on-rails-how-it-started-and-what-we-learned/ryan_carlos.jpg', class: 'img-thumbnail' %>
       <% end %>
     </p>
   </div>
    <div class="col-sm-4">
     <p>
-      <% link_to 'dinner_tripwing_team.jpg', data: { toggle: 'lightbox', title: 'Dinner with Tripwing Colleagues' } do %>
-        <%= image_tag 'dinner_tripwing_team.jpg', class: 'img-thumbnail' %>
+      <% link_to '/projects/2017-05-28-starting-a-business-on-rails-how-it-started-and-what-we-learned/dinner_tripwing_team.jpg', data: { toggle: 'lightbox', title: 'Dinner with Tripwing Colleagues' } do %>
+        <%= image_tag '/projects/2017-05-28-starting-a-business-on-rails-how-it-started-and-what-we-learned/dinner_tripwing_team.jpg', class: 'img-thumbnail' %>
       <% end %>
     </p>
   </div>
    <div class="col-sm-4">
     <p>
-      <% link_to 'carlos_edivv_team.jpg', data: { toggle: 'lightbox', title: 'Holiday Party with eDivv Friends' } do %>
-        <%= image_tag 'carlos_edivv_team.jpg', class: 'img-thumbnail' %>
+      <% link_to '/projects/2017-05-28-starting-a-business-on-rails-how-it-started-and-what-we-learned/carlos_edivv_team.jpg', data: { toggle: 'lightbox', title: 'Holiday Party with eDivv Friends' } do %>
+        <%= image_tag '/projects/2017-05-28-starting-a-business-on-rails-how-it-started-and-what-we-learned/carlos_edivv_team.jpg', class: 'img-thumbnail' %>
       <% end %>
     </p>
   </div>
@@ -112,29 +112,29 @@ Ryan & Carlos took us to some fun places and introduced us to loads of tremendou
 <div class="row">
   <div class="col-xs-6 col-md-3">
     <p>
-      <% link_to 'ryan_carlos_tripwing_team.jpg', data: { toggle: 'lightbox', title: 'NY Travel Show w/ team Tripwing' } do %>
-        <%= image_tag 'ryan_carlos_tripwing_team.jpg', class: 'img-thumbnail' %>
+      <% link_to '/projects/2017-05-28-starting-a-business-on-rails-how-it-started-and-what-we-learned/ryan_carlos_tripwing_team.jpg', data: { toggle: 'lightbox', title: 'NY Travel Show w/ team Tripwing' } do %>
+        <%= image_tag '/projects/2017-05-28-starting-a-business-on-rails-how-it-started-and-what-we-learned/ryan_carlos_tripwing_team.jpg', class: 'img-thumbnail' %>
       <% end %>
     </p>
   </div>
   <div class="col-xs-6 col-md-3">
     <p>
-      <% link_to 'ryan_carlos_affirmify_team.jpg', data: { toggle: 'lightbox', title: 'Starting Up with the Affirmify Team' } do %>
-        <%= image_tag 'ryan_carlos_affirmify_team.jpg', class: 'img-thumbnail' %>
+      <% link_to '/projects/2017-05-28-starting-a-business-on-rails-how-it-started-and-what-we-learned/ryan_carlos_affirmify_team.jpg', data: { toggle: 'lightbox', title: 'Starting Up with the Affirmify Team' } do %>
+        <%= image_tag '/projects/2017-05-28-starting-a-business-on-rails-how-it-started-and-what-we-learned/ryan_carlos_affirmify_team.jpg', class: 'img-thumbnail' %>
       <% end %>
     </p>
   </div>
   <div class="col-xs-6 col-md-3">
     <p>
-      <% link_to 'mets_tripwing_team.jpg', data: { toggle: 'lightbox', title: 'Mets Ball Game with Tripwing Team' } do %>
-        <%= image_tag 'mets_tripwing_team.jpg', class: 'img-thumbnail' %>
+      <% link_to '/projects/2017-05-28-starting-a-business-on-rails-how-it-started-and-what-we-learned/mets_tripwing_team.jpg', data: { toggle: 'lightbox', title: 'Mets Ball Game with Tripwing Team' } do %>
+        <%= image_tag '/projects/2017-05-28-starting-a-business-on-rails-how-it-started-and-what-we-learned/mets_tripwing_team.jpg', class: 'img-thumbnail' %>
       <% end %>
     </p>
   </div>
   <div class="col-xs-6 col-md-3">
     <p>
-      <% link_to 'cetrasoft_office.jpg', data: { toggle: 'lightbox', title: 'Cetrasoft Global HQ' } do %>
-        <%= image_tag 'cetrasoft_office.jpg', class: 'img-thumbnail' %>
+      <% link_to '/projects/2017-05-28-starting-a-business-on-rails-how-it-started-and-what-we-learned/cetrasoft_office.jpg', data: { toggle: 'lightbox', title: 'Cetrasoft Global HQ' } do %>
+        <%= image_tag '/projects/2017-05-28-starting-a-business-on-rails-how-it-started-and-what-we-learned/cetrasoft_office.jpg', class: 'img-thumbnail' %>
       <% end %>
     </p>
   </div>
@@ -143,8 +143,8 @@ Ryan & Carlos took us to some fun places and introduced us to loads of tremendou
 <div class="row">
    <div class="col-xs-12">
     <p>
-      <% link_to 'carlos_dc_trip.jpg', data: { toggle: 'lightbox', title: 'Contract Work in DC' } do %>
-        <%= image_tag 'carlos_dc_trip.jpg', class: 'img-thumbnail' %>
+      <% link_to '/projects/2017-05-28-starting-a-business-on-rails-how-it-started-and-what-we-learned/carlos_dc_trip.jpg', data: { toggle: 'lightbox', title: 'Contract Work in DC' } do %>
+        <%= image_tag '/projects/2017-05-28-starting-a-business-on-rails-how-it-started-and-what-we-learned/carlos_dc_trip.jpg', class: 'img-thumbnail' %>
       <% end %>
     </p>
   </div>

@@ -15,4 +15,4 @@ This results in a simple, clean, super fast, super available, and easily maintai
 
 And that's pretty much it.
 
-http://ryanjafari.me/
+https://ryanjafari.me/

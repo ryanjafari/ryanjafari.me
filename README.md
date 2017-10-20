@@ -1,6 +1,6 @@
 # ryanjafari.me
 
-## Status
+## Status :vertical_traffic_light:
 Always in-progress.
 
 ## What is this?
